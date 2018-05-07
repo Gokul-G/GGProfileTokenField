@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ProfileTokenViewDemo.xcodeproj">
+      location = "self:ProfileTokenFieldDemo.xcodeproj">
    </FileRef>
 </Workspace>

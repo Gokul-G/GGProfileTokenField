@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		59D80DDD209CACCE00A53356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D80DDC209CACCE00A53356 /* AppDelegate.swift */; };
-		59D80DDF209CACCE00A53356 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D80DDE209CACCE00A53356 /* ViewController.swift */; };
-		59D80DE2209CACCE00A53356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D80DE0209CACCE00A53356 /* Main.storyboard */; };
-		59D80DE4209CACD000A53356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D80DE3209CACD000A53356 /* Assets.xcassets */; };
-		59D80DE7209CACD000A53356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D80DE5209CACD000A53356 /* LaunchScreen.storyboard */; };
+		59CCBA1D20A0BD89004E4B75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CCBA1C20A0BD89004E4B75 /* AppDelegate.swift */; };
+		59CCBA1F20A0BD89004E4B75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CCBA1E20A0BD89004E4B75 /* ViewController.swift */; };
+		59CCBA2220A0BD89004E4B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CCBA2020A0BD89004E4B75 /* Main.storyboard */; };
+		59CCBA2420A0BD8A004E4B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59CCBA2320A0BD8A004E4B75 /* Assets.xcassets */; };
+		59CCBA2720A0BD8A004E4B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CCBA2520A0BD8A004E4B75 /* LaunchScreen.storyboard */; };
+		59CCBA3220A0BE61004E4B75 /* ProfileTokenField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CCBA3120A0BE61004E4B75 /* ProfileTokenField.swift */; };
+		59CCBA3420A0BF95004E4B75 /* ProfileTokenTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CCBA3320A0BF95004E4B75 /* ProfileTokenTextField.swift */; };
+		59CCBA3620A0C351004E4B75 /* ProfileToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CCBA3520A0C351004E4B75 /* ProfileToken.swift */; };
+		59CCBA3820A0C4EF004E4B75 /* ProfileToken.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59CCBA3720A0C4EF004E4B75 /* ProfileToken.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		59D80DD9209CACCE00A53356 /* ProfileTokenViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfileTokenViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		59D80DDC209CACCE00A53356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		59D80DDE209CACCE00A53356 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		59D80DE1209CACCE00A53356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		59D80DE3209CACD000A53356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		59D80DE6209CACD000A53356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		59D80DE8209CACD000A53356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59CCBA1920A0BD89004E4B75 /* ProfileTokenFieldDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfileTokenFieldDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59CCBA1C20A0BD89004E4B75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59CCBA1E20A0BD89004E4B75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59CCBA2120A0BD89004E4B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59CCBA2320A0BD8A004E4B75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59CCBA2620A0BD8A004E4B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59CCBA2820A0BD8A004E4B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59CCBA3120A0BE61004E4B75 /* ProfileTokenField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileTokenField.swift; path = ../../Source/ProfileTokenField.swift; sourceTree = "<group>"; };
+		59CCBA3320A0BF95004E4B75 /* ProfileTokenTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileTokenTextField.swift; path = ../../Source/ProfileTokenTextField.swift; sourceTree = "<group>"; };
+		59CCBA3520A0C351004E4B75 /* ProfileToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileToken.swift; path = ../../Source/ProfileToken.swift; sourceTree = "<group>"; };
+		59CCBA3720A0C4EF004E4B75 /* ProfileToken.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProfileToken.xib; path = ../../Source/ProfileToken.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		59D80DD6209CACCE00A53356 /* Frameworks */ = {
+		59CCBA1620A0BD89004E4B75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,71 +43,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		59D80DD0209CACCE00A53356 = {
+		59CCBA1020A0BD89004E4B75 = {
 			isa = PBXGroup;
 			children = (
-				59D80DDB209CACCE00A53356 /* ProfileTokenViewDemo */,
-				59D80DDA209CACCE00A53356 /* Products */,
+				59CCBA2E20A0BD99004E4B75 /* ProfileTokenField */,
+				59CCBA1B20A0BD89004E4B75 /* ProfileTokenFieldDemo */,
+				59CCBA1A20A0BD89004E4B75 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		59D80DDA209CACCE00A53356 /* Products */ = {
+		59CCBA1A20A0BD89004E4B75 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				59D80DD9209CACCE00A53356 /* ProfileTokenViewDemo.app */,
+				59CCBA1920A0BD89004E4B75 /* ProfileTokenFieldDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		59D80DDB209CACCE00A53356 /* ProfileTokenViewDemo */ = {
+		59CCBA1B20A0BD89004E4B75 /* ProfileTokenFieldDemo */ = {
 			isa = PBXGroup;
 			children = (
-				59D80DDC209CACCE00A53356 /* AppDelegate.swift */,
-				59D80DDE209CACCE00A53356 /* ViewController.swift */,
-				59D80DE0209CACCE00A53356 /* Main.storyboard */,
-				59D80DE3209CACD000A53356 /* Assets.xcassets */,
-				59D80DE5209CACD000A53356 /* LaunchScreen.storyboard */,
-				59D80DE8209CACD000A53356 /* Info.plist */,
+				59CCBA1C20A0BD89004E4B75 /* AppDelegate.swift */,
+				59CCBA1E20A0BD89004E4B75 /* ViewController.swift */,
+				59CCBA2020A0BD89004E4B75 /* Main.storyboard */,
+				59CCBA2320A0BD8A004E4B75 /* Assets.xcassets */,
+				59CCBA2520A0BD8A004E4B75 /* LaunchScreen.storyboard */,
+				59CCBA2820A0BD8A004E4B75 /* Info.plist */,
 			);
-			path = ProfileTokenViewDemo;
+			path = ProfileTokenFieldDemo;
+			sourceTree = "<group>";
+		};
+		59CCBA2E20A0BD99004E4B75 /* ProfileTokenField */ = {
+			isa = PBXGroup;
+			children = (
+				59CCBA3120A0BE61004E4B75 /* ProfileTokenField.swift */,
+				59CCBA3320A0BF95004E4B75 /* ProfileTokenTextField.swift */,
+				59CCBA3520A0C351004E4B75 /* ProfileToken.swift */,
+				59CCBA3720A0C4EF004E4B75 /* ProfileToken.xib */,
+			);
+			path = ProfileTokenField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		59D80DD8209CACCE00A53356 /* ProfileTokenViewDemo */ = {
+		59CCBA1820A0BD89004E4B75 /* ProfileTokenFieldDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59D80DEB209CACD000A53356 /* Build configuration list for PBXNativeTarget "ProfileTokenViewDemo" */;
+			buildConfigurationList = 59CCBA2B20A0BD8A004E4B75 /* Build configuration list for PBXNativeTarget "ProfileTokenFieldDemo" */;
 			buildPhases = (
-				59D80DD5209CACCE00A53356 /* Sources */,
-				59D80DD6209CACCE00A53356 /* Frameworks */,
-				59D80DD7209CACCE00A53356 /* Resources */,
+				59CCBA1520A0BD89004E4B75 /* Sources */,
+				59CCBA1620A0BD89004E4B75 /* Frameworks */,
+				59CCBA1720A0BD89004E4B75 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ProfileTokenViewDemo;
-			productName = ProfileTokenViewDemo;
-			productReference = 59D80DD9209CACCE00A53356 /* ProfileTokenViewDemo.app */;
+			name = ProfileTokenFieldDemo;
+			productName = ProfileTokenFieldDemo;
+			productReference = 59CCBA1920A0BD89004E4B75 /* ProfileTokenFieldDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		59D80DD1209CACCE00A53356 /* Project object */ = {
+		59CCBA1120A0BD89004E4B75 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = gokul;
 				TargetAttributes = {
-					59D80DD8209CACCE00A53356 = {
+					59CCBA1820A0BD89004E4B75 = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
-			buildConfigurationList = 59D80DD4209CACCE00A53356 /* Build configuration list for PBXProject "ProfileTokenViewDemo" */;
+			buildConfigurationList = 59CCBA1420A0BD89004E4B75 /* Build configuration list for PBXProject "ProfileTokenFieldDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,54 +127,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 59D80DD0209CACCE00A53356;
-			productRefGroup = 59D80DDA209CACCE00A53356 /* Products */;
+			mainGroup = 59CCBA1020A0BD89004E4B75;
+			productRefGroup = 59CCBA1A20A0BD89004E4B75 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				59D80DD8209CACCE00A53356 /* ProfileTokenViewDemo */,
+				59CCBA1820A0BD89004E4B75 /* ProfileTokenFieldDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		59D80DD7209CACCE00A53356 /* Resources */ = {
+		59CCBA1720A0BD89004E4B75 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59D80DE7209CACD000A53356 /* LaunchScreen.storyboard in Resources */,
-				59D80DE4209CACD000A53356 /* Assets.xcassets in Resources */,
-				59D80DE2209CACCE00A53356 /* Main.storyboard in Resources */,
+				59CCBA2720A0BD8A004E4B75 /* LaunchScreen.storyboard in Resources */,
+				59CCBA2420A0BD8A004E4B75 /* Assets.xcassets in Resources */,
+				59CCBA2220A0BD89004E4B75 /* Main.storyboard in Resources */,
+				59CCBA3820A0C4EF004E4B75 /* ProfileToken.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		59D80DD5209CACCE00A53356 /* Sources */ = {
+		59CCBA1520A0BD89004E4B75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59D80DDF209CACCE00A53356 /* ViewController.swift in Sources */,
-				59D80DDD209CACCE00A53356 /* AppDelegate.swift in Sources */,
+				59CCBA3220A0BE61004E4B75 /* ProfileTokenField.swift in Sources */,
+				59CCBA3420A0BF95004E4B75 /* ProfileTokenTextField.swift in Sources */,
+				59CCBA3620A0C351004E4B75 /* ProfileToken.swift in Sources */,
+				59CCBA1F20A0BD89004E4B75 /* ViewController.swift in Sources */,
+				59CCBA1D20A0BD89004E4B75 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		59D80DE0209CACCE00A53356 /* Main.storyboard */ = {
+		59CCBA2020A0BD89004E4B75 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				59D80DE1209CACCE00A53356 /* Base */,
+				59CCBA2120A0BD89004E4B75 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		59D80DE5209CACD000A53356 /* LaunchScreen.storyboard */ = {
+		59CCBA2520A0BD8A004E4B75 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				59D80DE6209CACD000A53356 /* Base */,
+				59CCBA2620A0BD8A004E4B75 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +186,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		59D80DE9209CACD000A53356 /* Debug */ = {
+		59CCBA2920A0BD8A004E4B75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,7 +246,7 @@
 			};
 			name = Debug;
 		};
-		59D80DEA209CACD000A53356 /* Release */ = {
+		59CCBA2A20A0BD8A004E4B75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,36 +300,36 @@
 			};
 			name = Release;
 		};
-		59D80DEC209CACD000A53356 /* Debug */ = {
+		59CCBA2C20A0BD8A004E4B75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K97PKTFX65;
-				INFOPLIST_FILE = ProfileTokenViewDemo/Info.plist;
+				INFOPLIST_FILE = ProfileTokenFieldDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gokul.ProfileTokenViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokul.ProfileTokenFieldDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		59D80DED209CACD000A53356 /* Release */ = {
+		59CCBA2D20A0BD8A004E4B75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K97PKTFX65;
-				INFOPLIST_FILE = ProfileTokenViewDemo/Info.plist;
+				INFOPLIST_FILE = ProfileTokenFieldDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gokul.ProfileTokenViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokul.ProfileTokenFieldDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,25 +339,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		59D80DD4209CACCE00A53356 /* Build configuration list for PBXProject "ProfileTokenViewDemo" */ = {
+		59CCBA1420A0BD89004E4B75 /* Build configuration list for PBXProject "ProfileTokenFieldDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59D80DE9209CACD000A53356 /* Debug */,
-				59D80DEA209CACD000A53356 /* Release */,
+				59CCBA2920A0BD8A004E4B75 /* Debug */,
+				59CCBA2A20A0BD8A004E4B75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59D80DEB209CACD000A53356 /* Build configuration list for PBXNativeTarget "ProfileTokenViewDemo" */ = {
+		59CCBA2B20A0BD8A004E4B75 /* Build configuration list for PBXNativeTarget "ProfileTokenFieldDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59D80DEC209CACD000A53356 /* Debug */,
-				59D80DED209CACD000A53356 /* Release */,
+				59CCBA2C20A0BD8A004E4B75 /* Debug */,
+				59CCBA2D20A0BD8A004E4B75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 59D80DD1209CACCE00A53356 /* Project object */;
+	rootObject = 59CCBA1120A0BD89004E4B75 /* Project object */;
 }
