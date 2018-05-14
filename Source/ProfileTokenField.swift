@@ -16,12 +16,32 @@ protocol ProfileTokenFieldDelegate {
 
 class ProfileTokenField : UIView {
     
+    var scrollView = UIScrollView()
     var tokens = [ProfileToken]()
     fileprivate var contentRect = CGRect.zero
     
     override func awakeFromNib() {
         self.backgroundColor = UIColor.green
     }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setUpViews()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setUpViews()
+    }
+    
+    
+    func setUpViews() {
+        scrollView.frame = self.bounds
+        scrollView.isScrollEnabled = true
+        scrollView.autoresizingMask = [.flexibleWidth , .flexibleHeight]
+        self.addSubview(scrollView)
+    }
+    
     
     func tokenTest() {
         for i in 0...15 {
@@ -30,7 +50,7 @@ class ProfileTokenField : UIView {
             profileToken?.label.text = "test"
             profileToken?.frame = CGRect(x:CGFloat(i) * 85, y: 0, width: 60, height: 50)
             tokens.append(profileToken!)
-            self.addSubview(profileToken!)
+            self.scrollView.addSubview(profileToken!)
         }
         self.invalidateIntrinsicContentSize()
     }
@@ -40,6 +60,7 @@ class ProfileTokenField : UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         calulateFrameForTokens()
+        self.scrollView.contentSize = CGSize(width: self.contentRect.width, height: self.contentRect.height * 2)
         self.invalidateIntrinsicContentSize()
     }
     
