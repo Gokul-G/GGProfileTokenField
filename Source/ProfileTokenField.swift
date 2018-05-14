@@ -60,7 +60,6 @@ class ProfileTokenField : UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         calulateFrameForTokens()
-        self.scrollView.contentSize = CGSize(width: self.contentRect.width, height: self.contentRect.height * 2)
         self.invalidateIntrinsicContentSize()
     }
     
@@ -70,25 +69,22 @@ class ProfileTokenField : UIView {
     
     func calulateFrameForTokens() {
         
-        var x : CGFloat = 0, y : CGFloat = 0
+        var xPosition : CGFloat = 0, yPosition : CGFloat = 0
         self.contentRect = .zero
+        let contentWidth = self.bounds.width
+        
         for token in tokens {
-            var contentWidth = self.bounds.width
             let tokenWidth = min(self.bounds.width, token.bounds.width)
-            
-            if(x > contentWidth - tokenWidth) {
-                y += token.bounds.height + 10
-                x = 0
+            if(xPosition > contentWidth - tokenWidth) {
+                yPosition += token.bounds.height + 10
+                xPosition = 0
             }
-            token.frame.origin.x = x
-            token.frame.origin.y = y
-            token.frame.size.width = tokenWidth
-            
+            token.frame = CGRect.init(x: xPosition, y: yPosition, width: tokenWidth, height: token.frame.height)
             contentRect = contentRect.union(token.frame)
-            
-            x += tokenWidth + 10
+            xPosition += tokenWidth + 10
         }
         
+        self.scrollView.contentSize = CGSize(width: self.contentRect.width, height: self.contentRect.height)
     }
     
 }
