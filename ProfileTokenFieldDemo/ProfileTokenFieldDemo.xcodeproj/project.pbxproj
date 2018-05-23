@@ -46,6 +46,7 @@
 		59AEE01620A33A0300E72FEB /* ProfileTokenField */ = {
 			isa = PBXGroup;
 			children = (
+				59F0C1BC20B5D068009398D7 /* Resources */,
 				59AEE01A20A33A1D00E72FEB /* ProfileToken.swift */,
 				59AEE01920A33A1D00E72FEB /* ProfileToken.xib */,
 				59AEE01820A33A1D00E72FEB /* ProfileTokenField.swift */,
@@ -82,6 +83,13 @@
 				59CCBA2820A0BD8A004E4B75 /* Info.plist */,
 			);
 			path = ProfileTokenFieldDemo;
+			sourceTree = "<group>";
+		};
+		59F0C1BC20B5D068009398D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

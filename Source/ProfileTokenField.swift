@@ -16,14 +16,17 @@ protocol ProfileTokenFieldDelegate {
 
 class ProfileTokenField : UIView {
     
-    var scrollView = UIScrollView()
-    var tokens = [ProfileToken]()
+    public var tokens = [ProfileToken]()
+    public var tokenHeight : CGFloat = 40
+    
+    fileprivate var scrollView = UIScrollView()
     fileprivate var contentRect = CGRect.zero
     
     override func awakeFromNib() {
         self.backgroundColor = UIColor.green
     }
     
+    //MARK:- Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUpViews()
@@ -35,7 +38,7 @@ class ProfileTokenField : UIView {
     }
     
     
-    func setUpViews() {
+    fileprivate func setUpViews() {
         scrollView.frame = self.bounds
         scrollView.isScrollEnabled = true
         scrollView.autoresizingMask = [.flexibleWidth , .flexibleHeight]
@@ -44,18 +47,15 @@ class ProfileTokenField : UIView {
     
     
     func tokenTest() {
-        for i in 0...15 {
+        for _ in 0...15 {
             let profileToken = Bundle.main.loadNibNamed("ProfileToken", owner: nil, options: nil)![0] as? ProfileToken
             profileToken?.backgroundColor = UIColor.red
-            profileToken?.label.text = "test"
-            profileToken?.frame = CGRect(x:CGFloat(i) * 85, y: 0, width: 60, height: 50)
+            profileToken?.label.text = "test"            
             tokens.append(profileToken!)
             self.scrollView.addSubview(profileToken!)
         }
         self.invalidateIntrinsicContentSize()
     }
-    
-    
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -68,18 +68,17 @@ class ProfileTokenField : UIView {
     }
     
     func calulateFrameForTokens() {
-        
         var xPosition : CGFloat = 0, yPosition : CGFloat = 0
         self.contentRect = .zero
         let contentWidth = self.bounds.width
         
         for token in tokens {
-            let tokenWidth = min(self.bounds.width, token.bounds.width)
+            let tokenWidth = token.getWidth(withSize: CGSize(width: self.bounds.width, height: tokenHeight))
             if(xPosition > contentWidth - tokenWidth) {
-                yPosition += token.bounds.height + 10
+                yPosition += tokenHeight + 10
                 xPosition = 0
             }
-            token.frame = CGRect.init(x: xPosition, y: yPosition, width: tokenWidth, height: token.frame.height)
+            token.frame = CGRect.init(x: xPosition, y: yPosition, width: tokenWidth, height: tokenHeight)
             contentRect = contentRect.union(token.frame)
             xPosition += tokenWidth + 10
         }
