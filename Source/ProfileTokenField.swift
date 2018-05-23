@@ -47,14 +47,18 @@ class ProfileTokenField : UIView {
     
     
     func tokenTest() {
-        for _ in 0...15 {
-            let profileToken = Bundle.main.loadNibNamed("ProfileToken", owner: nil, options: nil)![0] as? ProfileToken
-            profileToken?.backgroundColor = UIColor.red
-            profileToken?.label.text = "test"            
-            tokens.append(profileToken!)
-            self.scrollView.addSubview(profileToken!)
+        for _ in 0...4 {
+            addToken(forText: "text")
         }
-        self.invalidateIntrinsicContentSize()
+    }
+    
+    func addToken(forText text: String) {
+        let profileToken = Bundle.main.loadNibNamed("ProfileToken", owner: nil, options: nil)![0] as? ProfileToken
+        profileToken?.backgroundColor = UIColor.red
+        profileToken?.label.text = text
+        tokens.append(profileToken!)
+        self.scrollView.addSubview(profileToken!)
+        self.setNeedsLayout()
     }
     
     override func layoutSubviews() {
@@ -63,11 +67,13 @@ class ProfileTokenField : UIView {
         self.invalidateIntrinsicContentSize()
     }
     
+    
     override var intrinsicContentSize: CGSize {
         return self.contentRect.size
     }
     
-    func calulateFrameForTokens() {
+    //MARK:- Height Calculations
+    fileprivate func calulateFrameForTokens() {
         var xPosition : CGFloat = 0, yPosition : CGFloat = 0
         self.contentRect = .zero
         let contentWidth = self.bounds.width
