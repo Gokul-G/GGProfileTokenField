@@ -9,15 +9,22 @@
 import UIKit
 
 protocol ProfileTokenFieldDelegate {
-    func didAdd(token: ProfileTokenField, atIndexPath indexPath : IndexPath)
-    func didRemove(token: ProfileTokenField, atIndexPath indexPath : IndexPath)
-    func shouldAdd(token: ProfileTokenField, withText text : String) -> Bool
+    func didAdd(token: ProfileToken, atIndex index : Int)
+    func didRemove(token: ProfileToken, atIndex index : Int)
+    func shouldAdd(token: ProfileToken, withText text : String) -> Bool
+    func contentHeightOfProfileTokenField(height : CGFloat)
 }
 
 class ProfileTokenField : UIView {
     
     public var tokens = [ProfileToken]()
     public var tokenHeight : CGFloat = 40
+    public var isScrollEnabled : Bool = true {
+        didSet {
+            scrollView.isScrollEnabled  = isScrollEnabled
+        }
+    }
+    var delegate : ProfileTokenFieldDelegate?
     
     fileprivate var scrollView = UIScrollView()
     fileprivate var contentRect = CGRect.zero
@@ -37,14 +44,12 @@ class ProfileTokenField : UIView {
         setUpViews()
     }
     
-    
     fileprivate func setUpViews() {
         scrollView.frame = self.bounds
         scrollView.isScrollEnabled = true
         scrollView.autoresizingMask = [.flexibleWidth , .flexibleHeight]
         self.addSubview(scrollView)
     }
-    
     
     func tokenTest() {
         for i in 0...4 {
@@ -62,6 +67,7 @@ class ProfileTokenField : UIView {
         tokens.append(profileToken!)
         self.scrollView.addSubview(profileToken!)
         self.setNeedsLayout()
+        delegate?.didAdd(token: profileToken!, atIndex: tokens.count - 1)
     }
     
     @objc func removeTokenButtonTapped(_ sender : UIButton)  {
@@ -76,6 +82,7 @@ class ProfileTokenField : UIView {
             tokens.remove(at: index)
             token.removeFromSuperview()
             self.setNeedsLayout()
+            delegate?.didRemove(token: token, atIndex: index)
         }
     }
     
@@ -107,7 +114,8 @@ class ProfileTokenField : UIView {
             xPosition += tokenWidth + 10
         }
         
-        self.scrollView.contentSize = CGSize(width: self.contentRect.width, height: self.contentRect.height)
+        self.scrollView.contentSize = contentRect.size
+        delegate?.contentHeightOfProfileTokenField(height: contentRect.height)
     }
     
 }

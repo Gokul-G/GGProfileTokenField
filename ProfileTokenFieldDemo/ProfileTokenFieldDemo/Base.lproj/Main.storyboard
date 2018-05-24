@@ -45,6 +45,7 @@
                     <connections>
                         <outlet property="addTokenButton" destination="mAt-dM-za9" id="A2q-Io-rHy"/>
                         <outlet property="profileTokenField" destination="Scl-uL-v2J" id="QCE-hm-dYQ"/>
+                        <outlet property="profileTokenFieldHeightConstraint" destination="oNk-TG-4Vg" id="VXc-BL-xlp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
