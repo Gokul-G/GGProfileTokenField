@@ -47,26 +47,44 @@ class ProfileTokenField : UIView {
     
     
     func tokenTest() {
-        for _ in 0...4 {
-            addToken(forText: "text")
+        for i in 0...4 {
+            addToken(forText: "text \(i)")
         }
     }
     
+    //MARK:- Public Methods
     func addToken(forText text: String) {
         let profileToken = Bundle.main.loadNibNamed("ProfileToken", owner: nil, options: nil)![0] as? ProfileToken
         profileToken?.backgroundColor = UIColor.red
         profileToken?.label.text = text
+        profileToken?.removeButton
+            .addTarget(self, action: #selector(ProfileTokenField.removeTokenButtonTapped(_:)), for: .touchUpInside )
         tokens.append(profileToken!)
         self.scrollView.addSubview(profileToken!)
         self.setNeedsLayout()
     }
     
+    @objc func removeTokenButtonTapped(_ sender : UIButton)  {
+        guard let token = sender.superview as? ProfileToken else {
+            return
+        }
+        removeToken(token)
+    }
+    
+    func removeToken(_ token : ProfileToken) {
+        if let index = tokens.index(of: token) {
+            tokens.remove(at: index)
+            token.removeFromSuperview()
+            self.setNeedsLayout()
+        }
+    }
+    
+    //MARK:- Layout Methods
     override func layoutSubviews() {
         super.layoutSubviews()
         calulateFrameForTokens()
         self.invalidateIntrinsicContentSize()
     }
-    
     
     override var intrinsicContentSize: CGSize {
         return self.contentRect.size

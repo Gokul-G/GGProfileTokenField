@@ -52,9 +52,9 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="closeButton" destination="ulp-bN-yeI" id="0QD-ke-9zy"/>
                 <outlet property="label" destination="Cds-Ce-D7p" id="pHg-CP-ask"/>
                 <outlet property="profileImageView" destination="OsA-Ng-85q" id="xVg-yl-rah"/>
+                <outlet property="removeButton" destination="ulp-bN-yeI" id="0QD-ke-9zy"/>
             </connections>
             <point key="canvasLocation" x="16.5" y="320.5"/>
         </view>
