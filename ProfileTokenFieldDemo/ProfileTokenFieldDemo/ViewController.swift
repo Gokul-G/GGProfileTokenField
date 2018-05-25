@@ -16,8 +16,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        profileTokenField.delegate = self
-        profileTokenField.tokenTest()
+        profileTokenField.delegate = self        
+        
+        //populateTokenField()
+    }
+    
+    
+    func populateTokenField(){
+        for i in 0...1 {
+            profileTokenField.addToken(forText: "textsafasfadsfsadfas\(i)")
+        }
     }
     
     @IBAction func addTokenButtonTapped(_ sender: Any) {

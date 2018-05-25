@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,20 +22,20 @@
                     <color key="backgroundColor" red="0.070588235289999995" green="0.52941176469999995" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="6HN-AC-sRs"/>
-                        <constraint firstAttribute="height" constant="30" id="aW4-2H-F3R"/>
+                        <constraint firstAttribute="width" secondItem="OsA-Ng-85q" secondAttribute="height" multiplier="1:1" id="YxX-PV-wZ1"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cds-Ce-D7p">
-                    <rect key="frame" x="45" y="27" width="258" height="21"/>
+                    <rect key="frame" x="45" y="27" width="261" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulp-bN-yeI">
-                    <rect key="frame" x="313" y="27.5" width="20" height="20"/>
+                    <rect key="frame" x="316" y="27.5" width="20" height="20"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="20" id="CyZ-vw-rae"/>
-                        <constraint firstAttribute="height" constant="20" id="Om7-FX-Ce3"/>
+                        <constraint firstAttribute="width" secondItem="ulp-bN-yeI" secondAttribute="height" multiplier="1:1" id="mod-4q-RMy"/>
                     </constraints>
                     <state key="normal" title="Button" image="close"/>
                 </button>
@@ -44,7 +45,7 @@
                 <constraint firstItem="Cds-Ce-D7p" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="3Gg-f8-7UY"/>
                 <constraint firstItem="OsA-Ng-85q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="4yh-6B-x5t"/>
                 <constraint firstItem="OsA-Ng-85q" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="68r-J5-1Os"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ulp-bN-yeI" secondAttribute="trailing" constant="8" id="DbU-p5-xqa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ulp-bN-yeI" secondAttribute="trailing" constant="5" id="DbU-p5-xqa"/>
                 <constraint firstItem="ulp-bN-yeI" firstAttribute="leading" secondItem="Cds-Ce-D7p" secondAttribute="trailing" constant="10" id="TXQ-lP-04Z"/>
                 <constraint firstItem="ulp-bN-yeI" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="ejX-MO-Qmj"/>
                 <constraint firstItem="Cds-Ce-D7p" firstAttribute="leading" secondItem="OsA-Ng-85q" secondAttribute="trailing" constant="10" id="u97-id-RkV"/>
@@ -53,8 +54,12 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="label" destination="Cds-Ce-D7p" id="pHg-CP-ask"/>
+                <outlet property="labelAndRemoveButtonSpaceConstraint" destination="TXQ-lP-04Z" id="itS-00-VEW"/>
                 <outlet property="profileImageView" destination="OsA-Ng-85q" id="xVg-yl-rah"/>
+                <outlet property="profileImageViewAndLabelSpaceConstraint" destination="u97-id-RkV" id="svp-lY-odw"/>
+                <outlet property="profileImageViewWidthConstraint" destination="6HN-AC-sRs" id="kDt-EK-0ov"/>
                 <outlet property="removeButton" destination="ulp-bN-yeI" id="0QD-ke-9zy"/>
+                <outlet property="removeButtonWidthConstraint" destination="CyZ-vw-rae" id="8MH-dq-iQM"/>
             </connections>
             <point key="canvasLocation" x="16.5" y="320.5"/>
         </view>

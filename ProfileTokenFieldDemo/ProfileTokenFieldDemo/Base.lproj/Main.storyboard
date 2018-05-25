@@ -22,6 +22,7 @@
                                 <rect key="frame" x="10" y="30" width="355" height="130"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="355" id="8ex-u4-EKg"/>
                                     <constraint firstAttribute="height" constant="130" id="oNk-TG-4Vg"/>
                                 </constraints>
                             </view>
