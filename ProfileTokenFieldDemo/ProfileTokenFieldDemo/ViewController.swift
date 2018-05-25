@@ -34,7 +34,7 @@ extension ViewController : ProfileTokenFieldDelegate {
     
     func didRemove(token: ProfileToken, atIndex index: Int) {
         
-    }to
+    }
     
     func shouldAddToken(withText text: String) -> Bool {
         //validate text and return 
