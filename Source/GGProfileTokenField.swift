@@ -54,19 +54,28 @@ class GGProfileTokenField : UIView {
         scrollView.autoresizingMask = [.flexibleWidth , .flexibleHeight]
         self.addSubview(scrollView)        
     }
-        
+}
+
+
+extension GGProfileTokenField {
     //MARK:- Public Methods
-    func addToken(forText text: String) {
+    func addToken(forText text: String, withImage image : UIImage? = nil) {
         let validToken = delegate?.shouldAddToken(withText: text) ?? false
         guard validToken else { return }
         
         let profileToken = createProfileToken()
-        profileToken.label.text = text
+        profileToken.textLabel.text = text
+        profileToken.profileImageView.image = image
         tokens.append(profileToken)
         self.scrollView.addSubview(profileToken)
         self.setNeedsLayout()
         delegate?.didAdd(token: profileToken, atIndex: tokens.count - 1)
     }
+    
+    func addToken(forText text: String, withImageURL imageURL : NSURL, placeHolderImage : UIImage?) {
+        addToken(forText : text, withImage : nil) 
+    }
+    
     
     func removeToken(_ token : GGProfileToken) {
         guard let index = tokens.index(of: token) else { return }
@@ -124,8 +133,6 @@ extension GGProfileTokenField  {
         self.contentRect = .zero
         let contentWidth = self.bounds.width
         
-        
-        
         for token in tokens {
             let tokenWidth = calculateWidth(forToken:token)
             if(xPosition > contentWidth - tokenWidth) {
@@ -142,7 +149,7 @@ extension GGProfileTokenField  {
     }
     
     private func calculateWidth(forToken token: GGProfileToken) -> CGFloat {
-        let labelWeidth = token.label.sizeThatFits(CGSize(width: self.bounds.width, height: tokenHeight)).width
+        let labelWeidth = token.textLabel.sizeThatFits(CGSize(width: self.bounds.width, height: tokenHeight)).width
         var tokenWidth = labelWeidth
        
         if !isRemoveHidden {

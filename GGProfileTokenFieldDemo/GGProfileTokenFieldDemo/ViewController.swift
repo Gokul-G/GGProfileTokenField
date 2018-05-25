@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func addTokenButtonTapped(_ sender: Any) {
-        profileTokenField.addToken(forText: "newToken")
+        profileTokenField.addToken(forText: "MR.Lego man", withImage: #imageLiteral(resourceName: "legoUser"))
     }
         
 }

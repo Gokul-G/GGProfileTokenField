@@ -13,7 +13,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GGProfileToken" customModule="ProfileTokenFieldDemo" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GGProfileToken" customModule="GGProfileTokenFieldDemo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="341" height="75"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -53,13 +53,13 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="label" destination="Cds-Ce-D7p" id="pHg-CP-ask"/>
                 <outlet property="labelAndRemoveButtonSpaceConstraint" destination="TXQ-lP-04Z" id="itS-00-VEW"/>
                 <outlet property="profileImageView" destination="OsA-Ng-85q" id="xVg-yl-rah"/>
                 <outlet property="profileImageViewAndLabelSpaceConstraint" destination="u97-id-RkV" id="svp-lY-odw"/>
                 <outlet property="profileImageViewWidthConstraint" destination="6HN-AC-sRs" id="kDt-EK-0ov"/>
                 <outlet property="removeButton" destination="ulp-bN-yeI" id="0QD-ke-9zy"/>
                 <outlet property="removeButtonWidthConstraint" destination="CyZ-vw-rae" id="8MH-dq-iQM"/>
+                <outlet property="textLabel" destination="Cds-Ce-D7p" id="pHg-CP-ask"/>
             </connections>
             <point key="canvasLocation" x="16.5" y="320.5"/>
         </view>

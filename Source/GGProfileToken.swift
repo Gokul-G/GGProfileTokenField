@@ -12,7 +12,7 @@ import UIKit
 class GGProfileToken: UIView {
     
     @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet weak var label: UILabel!    
+    @IBOutlet weak var textLabel: UILabel!    
     @IBOutlet weak var removeButton: UIButton!
     
     //MARK:- Constraints
