@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		593D0FDB20B858CF003E3C09 /* ProfileTokenFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593D0FDA20B858CF003E3C09 /* ProfileTokenFieldDelegate.swift */; };
-		59AEE01B20A33A1D00E72FEB /* ProfileTokenTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AEE01720A33A1D00E72FEB /* ProfileTokenTextField.swift */; };
-		59AEE01C20A33A1D00E72FEB /* ProfileTokenField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AEE01820A33A1D00E72FEB /* ProfileTokenField.swift */; };
-		59AEE01D20A33A1D00E72FEB /* ProfileToken.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59AEE01920A33A1D00E72FEB /* ProfileToken.xib */; };
-		59AEE01E20A33A1D00E72FEB /* ProfileToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AEE01A20A33A1D00E72FEB /* ProfileToken.swift */; };
+		593D0FDD20B89382003E3C09 /* GGProfileTokenFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593D0FDC20B89382003E3C09 /* GGProfileTokenFieldDelegate.swift */; };
+		59AEE01B20A33A1D00E72FEB /* GGProfileTokenTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AEE01720A33A1D00E72FEB /* GGProfileTokenTextField.swift */; };
+		59AEE01C20A33A1D00E72FEB /* GGProfileTokenField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AEE01820A33A1D00E72FEB /* GGProfileTokenField.swift */; };
+		59AEE01D20A33A1D00E72FEB /* GGProfileToken.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59AEE01920A33A1D00E72FEB /* GGProfileToken.xib */; };
+		59AEE01E20A33A1D00E72FEB /* GGProfileToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AEE01A20A33A1D00E72FEB /* GGProfileToken.swift */; };
 		59CCBA1D20A0BD89004E4B75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CCBA1C20A0BD89004E4B75 /* AppDelegate.swift */; };
 		59CCBA1F20A0BD89004E4B75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CCBA1E20A0BD89004E4B75 /* ViewController.swift */; };
 		59CCBA2220A0BD89004E4B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CCBA2020A0BD89004E4B75 /* Main.storyboard */; };
@@ -20,12 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		593D0FDA20B858CF003E3C09 /* ProfileTokenFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTokenFieldDelegate.swift; sourceTree = "<group>"; };
-		59AEE01720A33A1D00E72FEB /* ProfileTokenTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTokenTextField.swift; path = ../Source/ProfileTokenTextField.swift; sourceTree = "<group>"; };
-		59AEE01820A33A1D00E72FEB /* ProfileTokenField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTokenField.swift; path = ../Source/ProfileTokenField.swift; sourceTree = "<group>"; };
-		59AEE01920A33A1D00E72FEB /* ProfileToken.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileToken.xib; path = ../Source/ProfileToken.xib; sourceTree = "<group>"; };
-		59AEE01A20A33A1D00E72FEB /* ProfileToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileToken.swift; path = ../Source/ProfileToken.swift; sourceTree = "<group>"; };
-		59CCBA1920A0BD89004E4B75 /* ProfileTokenFieldDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfileTokenFieldDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		593D0FDC20B89382003E3C09 /* GGProfileTokenFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGProfileTokenFieldDelegate.swift; path = ../Source/GGProfileTokenFieldDelegate.swift; sourceTree = "<group>"; };
+		59AEE01720A33A1D00E72FEB /* GGProfileTokenTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGProfileTokenTextField.swift; path = ../Source/GGProfileTokenTextField.swift; sourceTree = "<group>"; };
+		59AEE01820A33A1D00E72FEB /* GGProfileTokenField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGProfileTokenField.swift; path = ../Source/GGProfileTokenField.swift; sourceTree = "<group>"; };
+		59AEE01920A33A1D00E72FEB /* GGProfileToken.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GGProfileToken.xib; path = ../Source/GGProfileToken.xib; sourceTree = "<group>"; };
+		59AEE01A20A33A1D00E72FEB /* GGProfileToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGProfileToken.swift; path = ../Source/GGProfileToken.swift; sourceTree = "<group>"; };
+		59CCBA1920A0BD89004E4B75 /* GGProfileTokenFieldDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGProfileTokenFieldDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CCBA1C20A0BD89004E4B75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59CCBA1E20A0BD89004E4B75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59CCBA2120A0BD89004E4B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,24 +45,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		59AEE01620A33A0300E72FEB /* ProfileTokenField */ = {
+		59AEE01620A33A0300E72FEB /* GGProfileTokenField */ = {
 			isa = PBXGroup;
 			children = (
 				59F0C1BC20B5D068009398D7 /* Resources */,
-				59AEE01A20A33A1D00E72FEB /* ProfileToken.swift */,
-				59AEE01920A33A1D00E72FEB /* ProfileToken.xib */,
-				59AEE01820A33A1D00E72FEB /* ProfileTokenField.swift */,
-				59AEE01720A33A1D00E72FEB /* ProfileTokenTextField.swift */,
-				593D0FDA20B858CF003E3C09 /* ProfileTokenFieldDelegate.swift */,
+				59AEE01A20A33A1D00E72FEB /* GGProfileToken.swift */,
+				59AEE01920A33A1D00E72FEB /* GGProfileToken.xib */,
+				59AEE01820A33A1D00E72FEB /* GGProfileTokenField.swift */,
+				59AEE01720A33A1D00E72FEB /* GGProfileTokenTextField.swift */,
+				593D0FDC20B89382003E3C09 /* GGProfileTokenFieldDelegate.swift */,
 			);
-			name = ProfileTokenField;
+			name = GGProfileTokenField;
 			sourceTree = "<group>";
 		};
 		59CCBA1020A0BD89004E4B75 = {
 			isa = PBXGroup;
 			children = (
-				59AEE01620A33A0300E72FEB /* ProfileTokenField */,
-				59CCBA1B20A0BD89004E4B75 /* ProfileTokenFieldDemo */,
+				59AEE01620A33A0300E72FEB /* GGProfileTokenField */,
+				59CCBA1B20A0BD89004E4B75 /* GGProfileTokenFieldDemo */,
 				59CCBA1A20A0BD89004E4B75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,12 +70,12 @@
 		59CCBA1A20A0BD89004E4B75 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				59CCBA1920A0BD89004E4B75 /* ProfileTokenFieldDemo.app */,
+				59CCBA1920A0BD89004E4B75 /* GGProfileTokenFieldDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		59CCBA1B20A0BD89004E4B75 /* ProfileTokenFieldDemo */ = {
+		59CCBA1B20A0BD89004E4B75 /* GGProfileTokenFieldDemo */ = {
 			isa = PBXGroup;
 			children = (
 				59CCBA1C20A0BD89004E4B75 /* AppDelegate.swift */,
@@ -85,7 +85,7 @@
 				59CCBA2520A0BD8A004E4B75 /* LaunchScreen.storyboard */,
 				59CCBA2820A0BD8A004E4B75 /* Info.plist */,
 			);
-			path = ProfileTokenFieldDemo;
+			path = GGProfileTokenFieldDemo;
 			sourceTree = "<group>";
 		};
 		59F0C1BC20B5D068009398D7 /* Resources */ = {
@@ -98,9 +98,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		59CCBA1820A0BD89004E4B75 /* ProfileTokenFieldDemo */ = {
+		59CCBA1820A0BD89004E4B75 /* GGProfileTokenFieldDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59CCBA2B20A0BD8A004E4B75 /* Build configuration list for PBXNativeTarget "ProfileTokenFieldDemo" */;
+			buildConfigurationList = 59CCBA2B20A0BD8A004E4B75 /* Build configuration list for PBXNativeTarget "GGProfileTokenFieldDemo" */;
 			buildPhases = (
 				59CCBA1520A0BD89004E4B75 /* Sources */,
 				59CCBA1620A0BD89004E4B75 /* Frameworks */,
@@ -110,9 +110,9 @@
 			);
 			dependencies = (
 			);
-			name = ProfileTokenFieldDemo;
+			name = GGProfileTokenFieldDemo;
 			productName = ProfileTokenFieldDemo;
-			productReference = 59CCBA1920A0BD89004E4B75 /* ProfileTokenFieldDemo.app */;
+			productReference = 59CCBA1920A0BD89004E4B75 /* GGProfileTokenFieldDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 59CCBA1420A0BD89004E4B75 /* Build configuration list for PBXProject "ProfileTokenFieldDemo" */;
+			buildConfigurationList = 59CCBA1420A0BD89004E4B75 /* Build configuration list for PBXProject "GGProfileTokenFieldDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -143,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				59CCBA1820A0BD89004E4B75 /* ProfileTokenFieldDemo */,
+				59CCBA1820A0BD89004E4B75 /* GGProfileTokenFieldDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -154,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59CCBA2720A0BD8A004E4B75 /* LaunchScreen.storyboard in Resources */,
-				59AEE01D20A33A1D00E72FEB /* ProfileToken.xib in Resources */,
+				59AEE01D20A33A1D00E72FEB /* GGProfileToken.xib in Resources */,
 				59CCBA2420A0BD8A004E4B75 /* Assets.xcassets in Resources */,
 				59CCBA2220A0BD89004E4B75 /* Main.storyboard in Resources */,
 			);
@@ -169,10 +169,10 @@
 			files = (
 				59CCBA1F20A0BD89004E4B75 /* ViewController.swift in Sources */,
 				59CCBA1D20A0BD89004E4B75 /* AppDelegate.swift in Sources */,
-				59AEE01C20A33A1D00E72FEB /* ProfileTokenField.swift in Sources */,
-				59AEE01B20A33A1D00E72FEB /* ProfileTokenTextField.swift in Sources */,
-				59AEE01E20A33A1D00E72FEB /* ProfileToken.swift in Sources */,
-				593D0FDB20B858CF003E3C09 /* ProfileTokenFieldDelegate.swift in Sources */,
+				59AEE01C20A33A1D00E72FEB /* GGProfileTokenField.swift in Sources */,
+				593D0FDD20B89382003E3C09 /* GGProfileTokenFieldDelegate.swift in Sources */,
+				59AEE01B20A33A1D00E72FEB /* GGProfileTokenTextField.swift in Sources */,
+				59AEE01E20A33A1D00E72FEB /* GGProfileToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,15 +316,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K97PKTFX65;
-				INFOPLIST_FILE = ProfileTokenFieldDemo/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/GGProfileTokenFieldDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokul.ProfileTokenFieldDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -334,15 +336,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K97PKTFX65;
-				INFOPLIST_FILE = ProfileTokenFieldDemo/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/GGProfileTokenFieldDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokul.ProfileTokenFieldDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -351,7 +355,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		59CCBA1420A0BD89004E4B75 /* Build configuration list for PBXProject "ProfileTokenFieldDemo" */ = {
+		59CCBA1420A0BD89004E4B75 /* Build configuration list for PBXProject "GGProfileTokenFieldDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59CCBA2920A0BD8A004E4B75 /* Debug */,
@@ -360,7 +364,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59CCBA2B20A0BD8A004E4B75 /* Build configuration list for PBXNativeTarget "ProfileTokenFieldDemo" */ = {
+		59CCBA2B20A0BD8A004E4B75 /* Build configuration list for PBXNativeTarget "GGProfileTokenFieldDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59CCBA2C20A0BD8A004E4B75 /* Debug */,

@@ -1,6 +1,6 @@
 //
-//  ProfileTokenFieldDelegate.swift
-//  ProfileTokenFieldDemo
+//  GGProfileTokenFieldDelegate.swift
+//  GGProfileTokenFieldDemo
 //
 //  Created by Gokul G on 25/05/18.
 //  Copyright © 2018 gokul. All rights reserved.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol ProfileTokenFieldDelegate {
+protocol GGProfileTokenFieldDelegate {
     
     /// didAdd method gets called when ever a new token is added to ProfileTokenField
     /// - Parameters:
     ///   - token: new token added
     ///   - index: index at which the token is added
-    func didAdd(token: ProfileToken, atIndex index : Int)
+    func didAdd(token: GGProfileToken, atIndex index : Int)
     
     
     /// didRemove method gets called when ever a token is removed from ProfileTokenField
@@ -22,7 +22,7 @@ protocol ProfileTokenFieldDelegate {
     /// - Parameters:
     ///   - token: token that is removed
     ///   - index: index at which the token was removed from
-    func didRemove(token: ProfileToken, atIndex index : Int)
+    func didRemove(token: GGProfileToken, atIndex index : Int)
     
     
     /// shouldAddToken - validates the text thats being added, only if true gets added to ProfileTokenField
@@ -38,7 +38,7 @@ protocol ProfileTokenFieldDelegate {
 
 
 
-extension ProfileTokenFieldDelegate {
+extension GGProfileTokenFieldDelegate {
     func shouldAddToken(withText text : String) -> Bool {
         return true
     }

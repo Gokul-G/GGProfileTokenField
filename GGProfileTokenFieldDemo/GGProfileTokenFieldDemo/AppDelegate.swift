@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ProfileTokenFieldDemo
+//  GGProfileTokenFieldDemo
 //
 //  Created by Gokul Ganapathy on 07/05/18.
 //  Copyright © 2018 gokul. All rights reserved.

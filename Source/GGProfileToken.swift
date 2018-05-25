@@ -1,6 +1,6 @@
 //
-//  ProfileToken.swift
-//  ProfileTokenFieldDemo
+//  GGProfileToken.swift
+//  GGProfileTokenFieldDemo
 //
 //  Created by Gokul G on 07/05/18.
 //  Copyright © 2018 gokul. All rights reserved.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ProfileToken: UIView {
+class GGProfileToken: UIView {
     
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var label: UILabel!    

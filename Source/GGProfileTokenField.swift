@@ -1,6 +1,6 @@
 //
-//  ProfileTokenField.swift
-//  ProfileTokenFieldDemo
+//  GGProfileTokenField.swift
+//  GGProfileTokenFieldDemo
 //
 //  Created by Gokul Ganapathy on 07/05/18.
 //  Copyright © 2018 gokul. All rights reserved.
@@ -9,13 +9,14 @@
 import UIKit
 import Foundation
 
-class ProfileTokenField : UIView {
+class GGProfileTokenField : UIView {
     
-    public var tokens = [ProfileToken]()
+    public var tokens = [GGProfileToken]()
     public var tokenHeight : CGFloat = 40
     public var profileImageWidth : CGFloat = 30
     public var removeButtonWidth : CGFloat = 20
     public var itemSpacing : CGFloat = 10
+    public var lineSpacing : CGFloat = 5
     public var padding : CGFloat = 5
     
     public var isProfileImageHidden : Bool = false
@@ -27,7 +28,7 @@ class ProfileTokenField : UIView {
         }
     }
     
-    var delegate : ProfileTokenFieldDelegate?
+    var delegate : GGProfileTokenFieldDelegate?
     
     fileprivate var scrollView = UIScrollView()
     fileprivate var contentRect = CGRect.zero
@@ -67,7 +68,7 @@ class ProfileTokenField : UIView {
         delegate?.didAdd(token: profileToken, atIndex: tokens.count - 1)
     }
     
-    func removeToken(_ token : ProfileToken) {
+    func removeToken(_ token : GGProfileToken) {
         guard let index = tokens.index(of: token) else { return }
             
         tokens.remove(at: index)
@@ -77,17 +78,17 @@ class ProfileTokenField : UIView {
     }
     
     @objc func removeTokenButtonTapped(_ sender : UIButton)  {
-        guard let token = sender.superview as? ProfileToken else { return }
+        guard let token = sender.superview as? GGProfileToken else { return }
         removeToken(token)
     }
 }
 
 
-extension ProfileTokenField {
+extension GGProfileTokenField {
     
-    func createProfileToken() -> ProfileToken {
-        let profileToken = Bundle.main.loadNibNamed("ProfileToken", owner: nil, options: nil)![0] as? ProfileToken        
-        profileToken?.removeButton.addTarget(self, action: #selector(ProfileTokenField.removeTokenButtonTapped(_:)), for: .touchUpInside )
+    func createProfileToken() -> GGProfileToken {
+        let profileToken = Bundle.main.loadNibNamed("GGProfileToken", owner: nil, options: nil)![0] as? GGProfileToken
+        profileToken?.removeButton.addTarget(self, action: #selector(GGProfileTokenField.removeTokenButtonTapped(_:)), for: .touchUpInside )
         
         profileToken?.profileImageViewWidthConstraint.constant = self.profileImageWidth
         profileToken?.removeButtonWidthConstraint.constant = self.removeButtonWidth
@@ -105,7 +106,7 @@ extension ProfileTokenField {
 }
 
 //MARK:- Layout Methods
-extension ProfileTokenField  {
+extension GGProfileTokenField  {
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -123,10 +124,12 @@ extension ProfileTokenField  {
         self.contentRect = .zero
         let contentWidth = self.bounds.width
         
+        
+        
         for token in tokens {
-            let tokenWidth = getWidth(forToken:token, withSize: CGSize(width: self.bounds.width, height: tokenHeight))
+            let tokenWidth = calculateWidth(forToken:token)
             if(xPosition > contentWidth - tokenWidth) {
-                yPosition += tokenHeight + 10
+                yPosition += tokenHeight + lineSpacing
                 xPosition = 0
             }
             token.frame = CGRect.init(x: xPosition, y: yPosition, width: tokenWidth, height: tokenHeight)
@@ -138,8 +141,8 @@ extension ProfileTokenField  {
         delegate?.contentHeightOfProfileTokenField(height: contentRect.height)
     }
     
-    private func getWidth(forToken token: ProfileToken, withSize size : CGSize) -> CGFloat {
-        let labelWeidth = token.label.sizeThatFits(size).width
+    private func calculateWidth(forToken token: GGProfileToken) -> CGFloat {
+        let labelWeidth = token.label.sizeThatFits(CGSize(width: self.bounds.width, height: tokenHeight)).width
         var tokenWidth = labelWeidth
        
         if !isRemoveHidden {
