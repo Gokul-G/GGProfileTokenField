@@ -27,15 +27,17 @@ class ViewController: UIViewController {
 }
 
 extension ViewController : ProfileTokenFieldDelegate {
+    
     func didAdd(token: ProfileToken, atIndex index: Int) {
         
     }
     
     func didRemove(token: ProfileToken, atIndex index: Int) {
         
-    }
+    }to
     
-    func shouldAdd(token: ProfileToken, withText text: String) -> Bool {
+    func shouldAddToken(withText text: String) -> Bool {
+        //validate text and return 
         return true
     }
     

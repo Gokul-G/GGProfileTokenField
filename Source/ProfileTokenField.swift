@@ -8,13 +8,6 @@
 
 import UIKit
 
-protocol ProfileTokenFieldDelegate {
-    func didAdd(token: ProfileToken, atIndex index : Int)
-    func didRemove(token: ProfileToken, atIndex index : Int)
-    func shouldAdd(token: ProfileToken, withText text : String) -> Bool
-    func contentHeightOfProfileTokenField(height : CGFloat)
-}
-
 class ProfileTokenField : UIView {
     
     public var tokens = [ProfileToken]()
@@ -48,7 +41,7 @@ class ProfileTokenField : UIView {
         scrollView.frame = self.bounds
         scrollView.isScrollEnabled = true
         scrollView.autoresizingMask = [.flexibleWidth , .flexibleHeight]
-        self.addSubview(scrollView)
+        self.addSubview(scrollView)        
     }
     
     func tokenTest() {
@@ -59,15 +52,13 @@ class ProfileTokenField : UIView {
     
     //MARK:- Public Methods
     func addToken(forText text: String) {
-        let profileToken = Bundle.main.loadNibNamed("ProfileToken", owner: nil, options: nil)![0] as? ProfileToken
-        profileToken?.backgroundColor = UIColor.red
-        profileToken?.label.text = text
-        profileToken?.removeButton
-            .addTarget(self, action: #selector(ProfileTokenField.removeTokenButtonTapped(_:)), for: .touchUpInside )
-        tokens.append(profileToken!)
-        self.scrollView.addSubview(profileToken!)
-        self.setNeedsLayout()
-        delegate?.didAdd(token: profileToken!, atIndex: tokens.count - 1)
+        let validToken = delegate?.shouldAddToken(withText: text) ?? false
+        guard validToken else {
+            return
+        }
+        
+        let profileToken = createProfileToken(forText: text)
+        delegate?.didAdd(token: profileToken, atIndex: tokens.count - 1)
     }
     
     @objc func removeTokenButtonTapped(_ sender : UIButton)  {
@@ -85,8 +76,29 @@ class ProfileTokenField : UIView {
             delegate?.didRemove(token: token, atIndex: index)
         }
     }
+}
+
+
+
+extension ProfileTokenField {
     
-    //MARK:- Layout Methods
+    func createProfileToken(forText text : String) -> ProfileToken {
+        let profileToken = Bundle.main.loadNibNamed("ProfileToken", owner: nil, options: nil)![0] as? ProfileToken
+        profileToken?.backgroundColor = UIColor.red
+        profileToken?.label.text = text
+        profileToken?.removeButton
+            .addTarget(self, action: #selector(ProfileTokenField.removeTokenButtonTapped(_:)), for: .touchUpInside )
+        tokens.append(profileToken!)
+        self.scrollView.addSubview(profileToken!)
+        self.setNeedsLayout()
+        
+        return profileToken!
+    }
+}
+
+//MARK:- Layout Methods
+extension ProfileTokenField  {
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         calulateFrameForTokens()
@@ -117,5 +129,4 @@ class ProfileTokenField : UIView {
         self.scrollView.contentSize = contentRect.size
         delegate?.contentHeightOfProfileTokenField(height: contentRect.height)
     }
-    
 }

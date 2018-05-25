@@ -24,7 +24,5 @@ class ProfileToken: UIView {
     func getWidth(withSize size : CGSize) -> CGFloat {
         return self.label.sizeThatFits(size).width + 30 + 30 + 30
     }
-        
-    
     
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		593D0FDB20B858CF003E3C09 /* ProfileTokenFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593D0FDA20B858CF003E3C09 /* ProfileTokenFieldDelegate.swift */; };
 		59AEE01B20A33A1D00E72FEB /* ProfileTokenTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AEE01720A33A1D00E72FEB /* ProfileTokenTextField.swift */; };
 		59AEE01C20A33A1D00E72FEB /* ProfileTokenField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AEE01820A33A1D00E72FEB /* ProfileTokenField.swift */; };
 		59AEE01D20A33A1D00E72FEB /* ProfileToken.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59AEE01920A33A1D00E72FEB /* ProfileToken.xib */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		593D0FDA20B858CF003E3C09 /* ProfileTokenFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTokenFieldDelegate.swift; sourceTree = "<group>"; };
 		59AEE01720A33A1D00E72FEB /* ProfileTokenTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTokenTextField.swift; path = ../Source/ProfileTokenTextField.swift; sourceTree = "<group>"; };
 		59AEE01820A33A1D00E72FEB /* ProfileTokenField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTokenField.swift; path = ../Source/ProfileTokenField.swift; sourceTree = "<group>"; };
 		59AEE01920A33A1D00E72FEB /* ProfileToken.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileToken.xib; path = ../Source/ProfileToken.xib; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 				59AEE01920A33A1D00E72FEB /* ProfileToken.xib */,
 				59AEE01820A33A1D00E72FEB /* ProfileTokenField.swift */,
 				59AEE01720A33A1D00E72FEB /* ProfileTokenTextField.swift */,
+				593D0FDA20B858CF003E3C09 /* ProfileTokenFieldDelegate.swift */,
 			);
 			name = ProfileTokenField;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				59AEE01C20A33A1D00E72FEB /* ProfileTokenField.swift in Sources */,
 				59AEE01B20A33A1D00E72FEB /* ProfileTokenTextField.swift in Sources */,
 				59AEE01E20A33A1D00E72FEB /* ProfileToken.swift in Sources */,
+				593D0FDB20B858CF003E3C09 /* ProfileTokenFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
