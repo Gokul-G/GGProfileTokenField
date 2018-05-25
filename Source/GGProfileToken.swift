@@ -26,6 +26,18 @@ class GGProfileToken: UIView {
         super.awakeFromNib()        
         self.layer.cornerRadius = 15
         self.profileImageView.layer.cornerRadius = self.profileImageView.frame.width / 2
+        self.profileImageView.clipsToBounds = true
+    }
+    
+    func setProfileImage(withURL imageURL : URL, placeHolderImage: UIImage?)  {
+        self.profileImageView.image = placeHolderImage
+        URLSession.shared.dataTask(with: imageURL, completionHandler: { (data, response, error) in
+            if let imageData = data, let image = UIImage(data: imageData) {
+                DispatchQueue.main.async() {
+                    self.profileImageView.image = image
+                }
+            }
+        }).resume()
     }
     
     func hideRemoveButton() {

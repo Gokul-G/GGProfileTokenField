@@ -72,8 +72,17 @@ extension GGProfileTokenField {
         delegate?.didAdd(token: profileToken, atIndex: tokens.count - 1)
     }
     
-    func addToken(forText text: String, withImageURL imageURL : NSURL, placeHolderImage : UIImage?) {
-        addToken(forText : text, withImage : nil) 
+    func addToken(forText text: String, withImageURL imageURL : URL, placeHolderImage : UIImage?) {
+        let validToken = delegate?.shouldAddToken(withText: text) ?? false
+        guard validToken else { return }
+        
+        let profileToken = createProfileToken()
+        profileToken.textLabel.text = text
+        profileToken.setProfileImage(withURL: imageURL, placeHolderImage: placeHolderImage)
+        tokens.append(profileToken)
+        self.scrollView.addSubview(profileToken)
+        self.setNeedsLayout()
+        delegate?.didAdd(token: profileToken, atIndex: tokens.count - 1)
     }
     
     
