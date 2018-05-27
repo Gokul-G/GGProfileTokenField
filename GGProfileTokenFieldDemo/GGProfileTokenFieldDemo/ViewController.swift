@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         profileTokenField.delegate = self
+        profileTokenField.font = UIFont.init(name: "Avenir-Book", size: 12.0)
         //populateTokenField()
     }
     

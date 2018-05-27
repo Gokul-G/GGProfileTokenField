@@ -54,11 +54,13 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="labelAndRemoveButtonSpaceConstraint" destination="TXQ-lP-04Z" id="itS-00-VEW"/>
+                <outlet property="leftPaddingConstraint" destination="4yh-6B-x5t" id="nQY-S3-4UI"/>
                 <outlet property="profileImageView" destination="OsA-Ng-85q" id="xVg-yl-rah"/>
                 <outlet property="profileImageViewAndLabelSpaceConstraint" destination="u97-id-RkV" id="svp-lY-odw"/>
                 <outlet property="profileImageViewWidthConstraint" destination="6HN-AC-sRs" id="kDt-EK-0ov"/>
                 <outlet property="removeButton" destination="ulp-bN-yeI" id="0QD-ke-9zy"/>
                 <outlet property="removeButtonWidthConstraint" destination="CyZ-vw-rae" id="8MH-dq-iQM"/>
+                <outlet property="rightPaddingConstraint" destination="DbU-p5-xqa" id="iMe-QC-9he"/>
                 <outlet property="textLabel" destination="Cds-Ce-D7p" id="pHg-CP-ask"/>
             </connections>
             <point key="canvasLocation" x="16.5" y="320.5"/>

@@ -11,6 +11,7 @@ import Foundation
 
 class GGProfileTokenField : UIView {
     
+    public var font :UIFont?
     public var tokens = [GGProfileToken]()
     public var tokenHeight : CGFloat = 40
     public var profileImageWidth : CGFloat = 30
@@ -18,9 +19,8 @@ class GGProfileTokenField : UIView {
     public var itemSpacing : CGFloat = 10
     public var lineSpacing : CGFloat = 5
     public var padding : CGFloat = 5
-    
     public var isProfileImageHidden : Bool = false
-    public var isRemoveHidden : Bool = false
+    public var isRemoveHidden : Bool = false    
     
     public var isScrollEnabled : Bool = true {
         didSet {
@@ -57,8 +57,9 @@ class GGProfileTokenField : UIView {
 }
 
 
+//MARK:- Public Methods
 extension GGProfileTokenField {
-    //MARK:- Public Methods
+    
     func addToken(forText text: String, withImage image : UIImage? = nil) {
         let validToken = delegate?.shouldAddToken(withText: text) ?? false
         guard validToken else { return }
@@ -107,9 +108,11 @@ extension GGProfileTokenField {
     func createProfileToken() -> GGProfileToken {
         let profileToken = Bundle.main.loadNibNamed("GGProfileToken", owner: nil, options: nil)![0] as? GGProfileToken
         profileToken?.removeButton.addTarget(self, action: #selector(GGProfileTokenField.removeTokenButtonTapped(_:)), for: .touchUpInside )
-        
+        profileToken?.textLabel.font = font
         profileToken?.profileImageViewWidthConstraint.constant = self.profileImageWidth
         profileToken?.removeButtonWidthConstraint.constant = self.removeButtonWidth
+        profileToken?.leftPaddingConstraint.constant = self.padding
+        profileToken?.rightPaddingConstraint.constant = self.padding
         
         if self.isRemoveHidden {
             profileToken?.hideRemoveButton()
@@ -171,8 +174,8 @@ extension GGProfileTokenField  {
             tokenWidth += itemSpacing
         }
         
-        tokenWidth += padding
-        tokenWidth += padding
+        tokenWidth += padding //left
+        tokenWidth += padding //right
         
         return tokenWidth
     }

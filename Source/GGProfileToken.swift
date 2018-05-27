@@ -21,6 +21,8 @@ class GGProfileToken: UIView {
         
     @IBOutlet weak var profileImageViewAndLabelSpaceConstraint: NSLayoutConstraint!
     @IBOutlet weak var labelAndRemoveButtonSpaceConstraint: NSLayoutConstraint!
+    @IBOutlet weak var leftPaddingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var rightPaddingConstraint: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()        
@@ -51,5 +53,4 @@ class GGProfileToken: UIView {
         profileImageViewAndLabelSpaceConstraint.constant = 0
         profileImageView.isHidden = true
     }
-    
 }
