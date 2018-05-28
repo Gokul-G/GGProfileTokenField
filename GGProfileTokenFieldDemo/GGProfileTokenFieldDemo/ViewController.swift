@@ -17,10 +17,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         profileTokenField.delegate = self
-        profileTokenField.font = UIFont.init(name: "Avenir-Book", size: 12.0)
+        profileTokenField.font = UIFont.init(name: "Avenir-Book", size: 12.0)        
         //populateTokenField()
-    }
-    
+    }    
     
     func populateTokenField(){
         for i in 0...1 {
@@ -31,8 +30,7 @@ class ViewController: UIViewController {
     @IBAction func addTokenButtonTapped(_ sender: Any) {
         let imageURL = URL.init(string: "https://randomuser.me/api/portraits/women/40.jpg")
         profileTokenField.addToken(forText: "Miss Genie", withImageURL: imageURL!, placeHolderImage: #imageLiteral(resourceName: "defaultProfileImage"))
-    }
-        
+    }        
 }
 
 extension ViewController : GGProfileTokenFieldDelegate {
@@ -51,8 +49,13 @@ extension ViewController : GGProfileTokenFieldDelegate {
     }
     
     func contentHeightOfProfileTokenField(height: CGFloat) {
-        self.profileTokenFieldHeightConstraint.constant = height
+        if height > 200 {
+            self.profileTokenFieldHeightConstraint.constant = 200
+            profileTokenField.isScrollEnabled = true
+        } else {
+            self.profileTokenFieldHeightConstraint.constant = height
+            profileTokenField.isScrollEnabled = false            
+        }        
     }
-    
 }
 

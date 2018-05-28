@@ -10,19 +10,19 @@ import UIKit
 import Foundation
 
 class GGProfileTokenField : UIView {
-    
-    public var font :UIFont?
-    public var tokens = [GGProfileToken]()
-    public var tokenHeight : CGFloat = 40
-    public var profileImageWidth : CGFloat = 30
-    public var removeButtonWidth : CGFloat = 20
-    public var itemSpacing : CGFloat = 10
-    public var lineSpacing : CGFloat = 5
-    public var padding : CGFloat = 5
-    public var isProfileImageHidden : Bool = false
-    public var isRemoveHidden : Bool = false    
-    
-    public var isScrollEnabled : Bool = true {
+   
+    var font :UIFont?
+    var tokens = [GGProfileToken]()
+    var tokenHeight : CGFloat = 40
+    var profileImageWidth : CGFloat = 30
+    var removeButtonWidth : CGFloat = 20
+    var itemSpacing : CGFloat = 10
+    var lineSpacing : CGFloat = 5
+    var padding : CGFloat = 5
+    var isProfileImageHidden : Bool = false
+    var isRemoveHidden : Bool = false
+   
+    var isScrollEnabled : Bool = true {
         didSet {
             scrollView.isScrollEnabled  = isScrollEnabled
         }
@@ -96,16 +96,11 @@ extension GGProfileTokenField {
         delegate?.didRemove(token: token, atIndex: index)
     }
     
-    @objc func removeTokenButtonTapped(_ sender : UIButton)  {
-        guard let token = sender.superview as? GGProfileToken else { return }
-        removeToken(token)
-    }
 }
 
 
 extension GGProfileTokenField {
-    
-    func createProfileToken() -> GGProfileToken {
+    fileprivate func createProfileToken() -> GGProfileToken {
         let profileToken = Bundle.main.loadNibNamed("GGProfileToken", owner: nil, options: nil)![0] as? GGProfileToken
         profileToken?.removeButton.addTarget(self, action: #selector(GGProfileTokenField.removeTokenButtonTapped(_:)), for: .touchUpInside )
         profileToken?.textLabel.font = font
@@ -123,6 +118,11 @@ extension GGProfileTokenField {
         }
         
         return profileToken!
+    }
+    
+    @objc func removeTokenButtonTapped(_ sender : UIButton)  {
+        guard let token = sender.superview as? GGProfileToken else { return }
+        removeToken(token)
     }
 }
 
@@ -151,6 +151,7 @@ extension GGProfileTokenField  {
                 yPosition += tokenHeight + lineSpacing
                 xPosition = 0
             }
+            
             token.frame = CGRect.init(x: xPosition, y: yPosition, width: tokenWidth, height: tokenHeight)
             contentRect = contentRect.union(token.frame)
             xPosition += tokenWidth + 10
