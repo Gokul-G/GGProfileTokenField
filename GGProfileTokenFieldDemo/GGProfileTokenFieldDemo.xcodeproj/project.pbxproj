@@ -17,9 +17,11 @@
 		59CCBA2220A0BD89004E4B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CCBA2020A0BD89004E4B75 /* Main.storyboard */; };
 		59CCBA2420A0BD8A004E4B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59CCBA2320A0BD8A004E4B75 /* Assets.xcassets */; };
 		59CCBA2720A0BD8A004E4B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CCBA2520A0BD8A004E4B75 /* LaunchScreen.storyboard */; };
+		5F9E885F283AFE645AC5CD5F /* Pods_GGProfileTokenFieldDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8085CDB15C70942A61E39CC3 /* Pods_GGProfileTokenFieldDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BE81F425CDA51C1C60878FB /* Pods-GGProfileTokenFieldDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGProfileTokenFieldDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GGProfileTokenFieldDemo/Pods-GGProfileTokenFieldDemo.release.xcconfig"; sourceTree = "<group>"; };
 		593D0FDC20B89382003E3C09 /* GGProfileTokenFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGProfileTokenFieldDelegate.swift; path = ../Source/GGProfileTokenFieldDelegate.swift; sourceTree = "<group>"; };
 		59AEE01720A33A1D00E72FEB /* GGProfileTokenTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGProfileTokenTextField.swift; path = ../Source/GGProfileTokenTextField.swift; sourceTree = "<group>"; };
 		59AEE01820A33A1D00E72FEB /* GGProfileTokenField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGProfileTokenField.swift; path = ../Source/GGProfileTokenField.swift; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		59CCBA2320A0BD8A004E4B75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59CCBA2620A0BD8A004E4B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59CCBA2820A0BD8A004E4B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8085CDB15C70942A61E39CC3 /* Pods_GGProfileTokenFieldDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGProfileTokenFieldDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C009FAD97FAB87F436BF634F /* Pods-GGProfileTokenFieldDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGProfileTokenFieldDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGProfileTokenFieldDemo/Pods-GGProfileTokenFieldDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,12 +43,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9E885F283AFE645AC5CD5F /* Pods_GGProfileTokenFieldDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DB63F7A9509F1B8328C189C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C009FAD97FAB87F436BF634F /* Pods-GGProfileTokenFieldDemo.debug.xcconfig */,
+				1BE81F425CDA51C1C60878FB /* Pods-GGProfileTokenFieldDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		59AEE01620A33A0300E72FEB /* GGProfileTokenField */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +78,8 @@
 				59AEE01620A33A0300E72FEB /* GGProfileTokenField */,
 				59CCBA1B20A0BD89004E4B75 /* GGProfileTokenFieldDemo */,
 				59CCBA1A20A0BD89004E4B75 /* Products */,
+				1DB63F7A9509F1B8328C189C /* Pods */,
+				66FDFCA01DAB31BD1EC83FC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +111,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		66FDFCA01DAB31BD1EC83FC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8085CDB15C70942A61E39CC3 /* Pods_GGProfileTokenFieldDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,6 +126,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59CCBA2B20A0BD8A004E4B75 /* Build configuration list for PBXNativeTarget "GGProfileTokenFieldDemo" */;
 			buildPhases = (
+				490607533E58076598183BE9 /* [CP] Check Pods Manifest.lock */,
 				59CCBA1520A0BD89004E4B75 /* Sources */,
 				59CCBA1620A0BD89004E4B75 /* Frameworks */,
 				59CCBA1720A0BD89004E4B75 /* Resources */,
@@ -161,6 +186,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		490607533E58076598183BE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GGProfileTokenFieldDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		59CCBA1520A0BD89004E4B75 /* Sources */ = {
@@ -314,6 +360,7 @@
 		};
 		59CCBA2C20A0BD8A004E4B75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C009FAD97FAB87F436BF634F /* Pods-GGProfileTokenFieldDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -334,6 +381,7 @@
 		};
 		59CCBA2D20A0BD8A004E4B75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BE81F425CDA51C1C60878FB /* Pods-GGProfileTokenFieldDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
