@@ -14,6 +14,7 @@
 
 /* Begin PBXFileReference section */
 		0594A5A3B35B6611C80D44080F2A3651 /* Pods-GGProfileTokenFieldDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGProfileTokenFieldDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		13373202719E50B65DD37BBA5FC83D77 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		3D7CE93630AB85E327600CD34B702026 /* Pods-GGProfileTokenFieldDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GGProfileTokenFieldDemo-dummy.m"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		719810BDC039BCAD5BDF28D7A8C2BB96 /* Pods_GGProfileTokenFieldDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GGProfileTokenFieldDemo.framework; path = "Pods-GGProfileTokenFieldDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +23,7 @@
 		B26C87BCFD6B912EBF5A27D07B893D40 /* Pods-GGProfileTokenFieldDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GGProfileTokenFieldDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BA55894B498E9B6F6DA7F21C3F1CF6B2 /* Pods-GGProfileTokenFieldDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGProfileTokenFieldDemo-resources.sh"; sourceTree = "<group>"; };
 		C1866645A8A0648EBD215A66CF48151D /* Pods-GGProfileTokenFieldDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGProfileTokenFieldDemo-frameworks.sh"; sourceTree = "<group>"; };
+		C8DFC284349BA44D57BC9F9C85EB6DD0 /* GGProfileTokenField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = GGProfileTokenField.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CAC92DDDDB0421631C25562A7FD7DEB7 /* Pods-GGProfileTokenFieldDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGProfileTokenFieldDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D54C0FB67A1EFECC1BE26C6242FE327B /* Pods-GGProfileTokenFieldDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GGProfileTokenFieldDemo-umbrella.h"; sourceTree = "<group>"; };
 		D96DCAD6FA381C62BB4A1733614486A2 /* Pods-GGProfileTokenFieldDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGProfileTokenFieldDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -40,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27B9FFB4411215F92CDCDAD9B5A849B3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C8DFC284349BA44D57BC9F9C85EB6DD0 /* GGProfileTokenField.podspec */,
+				13373202719E50B65DD37BBA5FC83D77 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				C9F7EC48E9CA6DDDFB150EF2217ACCFC /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				D365F0BECD5B4E502258110CC98D6201 /* Products */,
 				6685799054D49EF07DC32CDB44B7F0F0 /* Targets Support Files */,
@@ -90,6 +102,23 @@
 				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1B568CE4349E24DE93B0FDF32C1095B /* GGProfileTokenField */ = {
+			isa = PBXGroup;
+			children = (
+				27B9FFB4411215F92CDCDAD9B5A849B3 /* Pod */,
+			);
+			name = GGProfileTokenField;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C9F7EC48E9CA6DDDFB150EF2217ACCFC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1B568CE4349E24DE93B0FDF32C1095B /* GGProfileTokenField */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		D365F0BECD5B4E502258110CC98D6201 /* Products */ = {

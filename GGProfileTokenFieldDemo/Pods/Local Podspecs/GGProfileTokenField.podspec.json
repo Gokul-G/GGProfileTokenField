@@ -1,0 +1,18 @@
+{
+  "name": "GGProfileTokenField",
+  "version": "0.1.0",
+  "summary": "A short description of GGProfileTokenField.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Gokul-G/GGProfileTokenField",
+  "authors": {
+    "Gokul-G": "sg.gokul7@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Gokul-G/GGProfileTokenField.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "GGProfileTokenField/Classes/**/*"
+}

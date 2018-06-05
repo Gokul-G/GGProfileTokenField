@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: b4af3e46af8133cdcc0ce285def787203f299b3e
+PODS:
+  - GGProfileTokenField (0.1.0)
+
+DEPENDENCIES:
+  - GGProfileTokenField (from `../`)
+
+EXTERNAL SOURCES:
+  GGProfileTokenField:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GGProfileTokenField: 024aef5aa6115540e41a00954c1e9e24f098deee
+
+PODFILE CHECKSUM: e8b8c7929eda365522d904d003b9fb923b264685
 
 COCOAPODS: 1.5.2
