@@ -1,4 +1,4 @@
-framework module Pods_GGProfileTokenFieldDemo {
+module Pods_GGProfileTokenFieldDemo {
   umbrella header "Pods-GGProfileTokenFieldDemo-umbrella.h"
 
   export *

@@ -14,5 +14,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "GGProfileTokenField/Classes/**/*"
+  "source_files": "GGProfileTokenField/Classes/**/*.Swift",
+  "resource_bundles": {
+    "GGProfileTokenField": [
+      "GGProfileTokenField/Classes/**/*.xib"
+    ]
+  }
 }

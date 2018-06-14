@@ -9,31 +9,31 @@
 import UIKit
 import Foundation
 
-class GGProfileTokenField : UIView {
+public class GGProfileTokenField : UIView {
    
-    var font :UIFont?
-    var tokens = [GGProfileToken]()
-    var tokenHeight : CGFloat = 40
-    var profileImageWidth : CGFloat = 30
-    var removeButtonWidth : CGFloat = 20
-    var itemSpacing : CGFloat = 10
-    var lineSpacing : CGFloat = 5
-    var padding : CGFloat = 5
-    var isProfileImageHidden : Bool = false
-    var isRemoveHidden : Bool = false
+    public var font :UIFont?
+    public var tokens = [GGProfileToken]()
+    public var tokenHeight : CGFloat = 40
+    public var profileImageWidth : CGFloat = 30
+    public var removeButtonWidth : CGFloat = 20
+    public var itemSpacing : CGFloat = 10
+    public var lineSpacing : CGFloat = 5
+    public var padding : CGFloat = 5
+    public var isProfileImageHidden : Bool = false
+    public var isRemoveHidden : Bool = false
    
-    var isScrollEnabled : Bool = true {
+    public var isScrollEnabled : Bool = true {
         didSet {
             scrollView.isScrollEnabled  = isScrollEnabled
         }
     }
     
-    var delegate : GGProfileTokenFieldDelegate?
+    public var delegate : GGProfileTokenFieldDelegate?
     
     fileprivate var scrollView = UIScrollView()
     fileprivate var contentRect = CGRect.zero
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         self.backgroundColor = UIColor.green
     }
     
@@ -43,7 +43,7 @@ class GGProfileTokenField : UIView {
         setUpViews()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setUpViews()
     }
@@ -58,7 +58,7 @@ class GGProfileTokenField : UIView {
 
 
 //MARK:- Public Methods
-extension GGProfileTokenField {
+public extension GGProfileTokenField {
     
     func addToken(forText text: String, withImage image : UIImage? = nil) {
         let validToken = delegate?.shouldAddToken(withText: text) ?? false
@@ -101,7 +101,10 @@ extension GGProfileTokenField {
 
 extension GGProfileTokenField {
     fileprivate func createProfileToken() -> GGProfileToken {
-        let profileToken = Bundle.main.loadNibNamed("GGProfileToken", owner: nil, options: nil)![0] as? GGProfileToken
+        let bundle = Bundle(for: GGProfileToken.self)
+        let resourceBundlePath = bundle.path(forResource: "GGProfileTokenField", ofType: "bundle")!
+        let resourceBundle = Bundle(path: resourceBundlePath)!
+        let profileToken = resourceBundle.loadNibNamed("GGProfileToken", owner: nil, options: nil)![0] as? GGProfileToken
         profileToken?.removeButton.addTarget(self, action: #selector(GGProfileTokenField.removeTokenButtonTapped(_:)), for: .touchUpInside )
         profileToken?.textLabel.font = font
         profileToken?.profileImageViewWidthConstraint.constant = self.profileImageWidth
@@ -129,13 +132,13 @@ extension GGProfileTokenField {
 //MARK:- Layout Methods
 extension GGProfileTokenField  {
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         calulateFrameForTokens()
         self.invalidateIntrinsicContentSize()
     }
     
-    override var intrinsicContentSize: CGSize {
+    override open var intrinsicContentSize: CGSize {
         return self.contentRect.size
     }
     
@@ -160,6 +163,8 @@ extension GGProfileTokenField  {
         self.scrollView.contentSize = contentRect.size
         delegate?.contentHeightOfProfileTokenField(height: contentRect.height)
     }
+    
+    
     
     private func calculateWidth(forToken token: GGProfileToken) -> CGFloat {
         let labelWeidth = token.textLabel.sizeThatFits(CGSize(width: self.bounds.width, height: tokenHeight)).width

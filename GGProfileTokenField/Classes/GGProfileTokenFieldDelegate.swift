@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol GGProfileTokenFieldDelegate {
+public protocol GGProfileTokenFieldDelegate {
     
     /// didAdd method gets called when ever a new token is added to ProfileTokenField
     /// - Parameters:

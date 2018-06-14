@@ -1,0 +1,6 @@
+framework module GGProfileTokenField {
+  umbrella header "GGProfileTokenField-umbrella.h"
+
+  export *
+  module * { export * }
+}

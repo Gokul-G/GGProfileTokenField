@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import GGProfileTokenField
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var profileTokenField: GGProfileTokenField!
     @IBOutlet weak var profileTokenFieldHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var addTokenButton: UIButton!

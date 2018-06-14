@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class GGProfileToken: UIView {
+public class GGProfileToken: UIView {
     
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var textLabel: UILabel!    
@@ -24,7 +24,7 @@ class GGProfileToken: UIView {
     @IBOutlet weak var leftPaddingConstraint: NSLayoutConstraint!
     @IBOutlet weak var rightPaddingConstraint: NSLayoutConstraint!
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()        
         self.layer.cornerRadius = 15
         self.profileImageView.layer.cornerRadius = self.profileImageView.frame.width / 2

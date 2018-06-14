@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38E7F46029F57883627BD3AF /* libPods-GGProfileTokenFieldDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39832A1CF9B68D3C3F515F44 /* libPods-GGProfileTokenFieldDemo.a */; };
 		59CCBA1D20A0BD89004E4B75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CCBA1C20A0BD89004E4B75 /* AppDelegate.swift */; };
 		59CCBA1F20A0BD89004E4B75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CCBA1E20A0BD89004E4B75 /* ViewController.swift */; };
 		59CCBA2220A0BD89004E4B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CCBA2020A0BD89004E4B75 /* Main.storyboard */; };
 		59CCBA2420A0BD8A004E4B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59CCBA2320A0BD8A004E4B75 /* Assets.xcassets */; };
 		59CCBA2720A0BD8A004E4B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CCBA2520A0BD8A004E4B75 /* LaunchScreen.storyboard */; };
-		5F9E885F283AFE645AC5CD5F /* Pods_GGProfileTokenFieldDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8085CDB15C70942A61E39CC3 /* Pods_GGProfileTokenFieldDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BE81F425CDA51C1C60878FB /* Pods-GGProfileTokenFieldDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGProfileTokenFieldDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GGProfileTokenFieldDemo/Pods-GGProfileTokenFieldDemo.release.xcconfig"; sourceTree = "<group>"; };
+		39832A1CF9B68D3C3F515F44 /* libPods-GGProfileTokenFieldDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GGProfileTokenFieldDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CCBA1920A0BD89004E4B75 /* GGProfileTokenFieldDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGProfileTokenFieldDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CCBA1C20A0BD89004E4B75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59CCBA1E20A0BD89004E4B75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,7 +25,6 @@
 		59CCBA2320A0BD8A004E4B75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59CCBA2620A0BD8A004E4B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59CCBA2820A0BD8A004E4B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8085CDB15C70942A61E39CC3 /* Pods_GGProfileTokenFieldDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGProfileTokenFieldDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C009FAD97FAB87F436BF634F /* Pods-GGProfileTokenFieldDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGProfileTokenFieldDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGProfileTokenFieldDemo/Pods-GGProfileTokenFieldDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F9E885F283AFE645AC5CD5F /* Pods_GGProfileTokenFieldDemo.framework in Frameworks */,
+				38E7F46029F57883627BD3AF /* libPods-GGProfileTokenFieldDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 		66FDFCA01DAB31BD1EC83FC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8085CDB15C70942A61E39CC3 /* Pods_GGProfileTokenFieldDemo.framework */,
+				39832A1CF9B68D3C3F515F44 /* libPods-GGProfileTokenFieldDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,6 +99,7 @@
 				59CCBA1520A0BD89004E4B75 /* Sources */,
 				59CCBA1620A0BD89004E4B75 /* Frameworks */,
 				59CCBA1720A0BD89004E4B75 /* Resources */,
+				C842C72A8B92994BE7E4242C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,6 +173,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C842C72A8B92994BE7E4242C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GGProfileTokenFieldDemo/Pods-GGProfileTokenFieldDemo-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GGProfileTokenField/GGProfileTokenField.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GGProfileTokenField.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GGProfileTokenFieldDemo/Pods-GGProfileTokenFieldDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

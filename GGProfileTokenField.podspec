@@ -29,11 +29,11 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'GGProfileTokenField/Classes/**/*'
+  s.source_files = 'GGProfileTokenField/Classes/**/*.Swift'
   
-  # s.resource_bundles = {
-  #   'GGProfileTokenField' => ['GGProfileTokenField/Assets/*.png']
-  # }
+  s.resource_bundles = {
+      'GGProfileTokenField' => ['GGProfileTokenField/Classes/**/*.xib']
+  }     
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
