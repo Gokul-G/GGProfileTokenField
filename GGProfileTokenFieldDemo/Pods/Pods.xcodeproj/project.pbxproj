@@ -3,19 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A7DDBBD95E0CDDEEB641DE59D7EA710 /* GGProfileTokenField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73DE0DEAD58B8DA6EAC0A2529754A910 /* GGProfileTokenField-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4C155B53B663C316D0C66C501DB0A0E9 /* GGProfileTokenFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F676F510F6B763518E4183D39F84086 /* GGProfileTokenFieldDelegate.swift */; };
-		592EA65920D2DE8D005E6909 /* GGProfileTokenField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D635D231564559C3AB2B684042E5BD /* GGProfileTokenField.swift */; };
-		592EA65E20D2E110005E6909 /* GGProfileToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEC1C5B9C9FFCEC95236E99EF31C586 /* GGProfileToken.swift */; };
-		592EA65F20D2E11B005E6909 /* GGProfileToken.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A50171DA53C3A7964A38A70EE421076 /* GGProfileToken.xib */; };
+		05CD22CAE48477E874C2EE66FA406756 /* GGProfileTokenField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57495B58D035C6AC1B546E284DBFEF62 /* GGProfileTokenField.swift */; };
+		2A7DDBBD95E0CDDEEB641DE59D7EA710 /* GGProfileTokenField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C3381BDB758BD0A314C84F80FEC0AEB /* GGProfileTokenField-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4C155B53B663C316D0C66C501DB0A0E9 /* GGProfileTokenFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D733F22528E525C893401ACCFF7B3 /* GGProfileTokenFieldDelegate.swift */; };
+		4C2F47182827F1CD0D028B087E0D9A6A /* GGProfileToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B48A08FA5093B13C5F2BD6AA7E6281 /* GGProfileToken.swift */; };
 		636F5DB828B5BBC58B2BEAA581BD3D4F /* Pods-GGProfileTokenFieldDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F3EE64F95B05714FE75F3B85AB5B8C1 /* Pods-GGProfileTokenFieldDemo-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		94F61FDAFD27D2D274566F16129B9156 /* GGProfileToken.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B33E1D744EAA87C2F7E4142C44F7A4 /* GGProfileToken.xib */; };
 		9D8F61904B7CF7F4AD9148A93EA0789A /* Pods-GGProfileTokenFieldDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AAB99760676B80B25664E87905A11A /* Pods-GGProfileTokenFieldDemo-dummy.m */; };
-		BA0D503A815DCC71C6BD37DFD6B9D750 /* GGProfileTokenTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2AE083B10DA6655C58BF15F104F3B /* GGProfileTokenTextField.swift */; };
-		BA428D9DA61477A78DF70A659BB11646 /* GGProfileTokenField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1DE8313880F9E6A71DCAD12A13C0A0 /* GGProfileTokenField-dummy.m */; };
+		B51B1592BEB0C472A5CE77D95B0B4E85 /* GGProfileTokenField.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104E3A466CD836C40834713D85508E11 /* GGProfileTokenField.xcassets */; };
+		BA0D503A815DCC71C6BD37DFD6B9D750 /* GGProfileTokenTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E784E9B4C4D79A4B5E130E73F3A7D8DF /* GGProfileTokenTextField.swift */; };
+		BA428D9DA61477A78DF70A659BB11646 /* GGProfileTokenField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A535891C590AE05F554C108B9D63B37 /* GGProfileTokenField-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,32 +37,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04F2AE083B10DA6655C58BF15F104F3B /* GGProfileTokenTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GGProfileTokenTextField.swift; path = GGProfileTokenField/Classes/GGProfileTokenTextField.swift; sourceTree = "<group>"; };
-		1288A36B651C8CC8CB5799080205D299 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		175BBF75FC0C9C34E6519B7D7E7E3903 /* GGProfileTokenField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGProfileTokenField-prefix.pch"; sourceTree = "<group>"; };
-		229F48C79B8CA4CBCA4B05DAF0DCD2C1 /* ResourceBundle-GGProfileTokenField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GGProfileTokenField-Info.plist"; sourceTree = "<group>"; };
-		233C5990A5BFD2E0662C08FBD3A5DCE0 /* GGProfileTokenField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = GGProfileTokenField.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		25D635D231564559C3AB2B684042E5BD /* GGProfileTokenField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GGProfileTokenField.swift; path = GGProfileTokenField/Classes/GGProfileTokenField.swift; sourceTree = "<group>"; };
-		3174CEC8229F630FF0432DEB639914C5 /* libGGProfileTokenField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGGProfileTokenField.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		086A1AE9427492C4CBB6105D344EAC5F /* GGProfileTokenField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = GGProfileTokenField.modulemap; path = ../../Headers/Public/GGProfileTokenField/GGProfileTokenField.modulemap; sourceTree = "<group>"; };
+		09B60AC4896B25B6B0BADA69990FFAA0 /* GGProfileTokenField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = GGProfileTokenField.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		104E3A466CD836C40834713D85508E11 /* GGProfileTokenField.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = GGProfileTokenField.xcassets; sourceTree = "<group>"; };
+		10B2A5BF96FBB4BBA8C78A7DEF7C613C /* GGProfileTokenField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GGProfileTokenField-prefix.pch"; sourceTree = "<group>"; };
+		3174CEC8229F630FF0432DEB639914C5 /* libGGProfileTokenField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGGProfileTokenField.a; path = libGGProfileTokenField.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C3381BDB758BD0A314C84F80FEC0AEB /* GGProfileTokenField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GGProfileTokenField-umbrella.h"; path = "../../Headers/Public/GGProfileTokenField/GGProfileTokenField-umbrella.h"; sourceTree = "<group>"; };
 		4167C7A68974813B5745C884A366D8AA /* Pods-GGProfileTokenFieldDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGProfileTokenFieldDemo-frameworks.sh"; sourceTree = "<group>"; };
-		4F676F510F6B763518E4183D39F84086 /* GGProfileTokenFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GGProfileTokenFieldDelegate.swift; path = GGProfileTokenField/Classes/GGProfileTokenFieldDelegate.swift; sourceTree = "<group>"; };
-		5A50171DA53C3A7964A38A70EE421076 /* GGProfileToken.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = GGProfileToken.xib; path = GGProfileTokenField/Classes/GGProfileToken.xib; sourceTree = "<group>"; };
-		6AD505537297D066DCFE6CE510339859 /* GGProfileTokenField.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GGProfileTokenField.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		73DE0DEAD58B8DA6EAC0A2529754A910 /* GGProfileTokenField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GGProfileTokenField-umbrella.h"; path = "../../Headers/Public/GGProfileTokenField/GGProfileTokenField-umbrella.h"; sourceTree = "<group>"; };
+		4332985BB9C671F2DA2475529CB27943 /* GGProfileTokenField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGProfileTokenField.xcconfig; sourceTree = "<group>"; };
+		57495B58D035C6AC1B546E284DBFEF62 /* GGProfileTokenField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GGProfileTokenField.swift; path = GGProfileTokenField/Classes/GGProfileTokenField.swift; sourceTree = "<group>"; };
+		6AD505537297D066DCFE6CE510339859 /* GGProfileTokenField.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GGProfileTokenField.bundle; path = "GGProfileTokenField-GGProfileTokenField.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7918AD7AF08C184FB25C17FA014055EA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7F2D733F22528E525C893401ACCFF7B3 /* GGProfileTokenFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GGProfileTokenFieldDelegate.swift; path = GGProfileTokenField/Classes/GGProfileTokenFieldDelegate.swift; sourceTree = "<group>"; };
 		7F3EE64F95B05714FE75F3B85AB5B8C1 /* Pods-GGProfileTokenFieldDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GGProfileTokenFieldDemo-umbrella.h"; sourceTree = "<group>"; };
 		85FC8385F2BBB4C5922514035257DAB7 /* Pods-GGProfileTokenFieldDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGProfileTokenFieldDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8A535891C590AE05F554C108B9D63B37 /* GGProfileTokenField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GGProfileTokenField-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96AAB99760676B80B25664E87905A11A /* Pods-GGProfileTokenFieldDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GGProfileTokenFieldDemo-dummy.m"; sourceTree = "<group>"; };
 		A35B79908A2C2DD6DFD153D78A724CE8 /* Pods-GGProfileTokenFieldDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GGProfileTokenFieldDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A5A03B387265A07C5CC2047DF7543909 /* Pods-GGProfileTokenFieldDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGProfileTokenFieldDemo-resources.sh"; sourceTree = "<group>"; };
+		A6B48A08FA5093B13C5F2BD6AA7E6281 /* GGProfileToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GGProfileToken.swift; path = GGProfileTokenField/Classes/GGProfileToken.swift; sourceTree = "<group>"; };
 		A8735EEE36DED7F40576B2CEC1330D90 /* Pods-GGProfileTokenFieldDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGProfileTokenFieldDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B2424894B4D3D91CAB70E1A7CC7F5AD3 /* Pods-GGProfileTokenFieldDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GGProfileTokenFieldDemo.modulemap"; sourceTree = "<group>"; };
-		C504E25978ED919F23F5553F1D3D8424 /* libPods-GGProfileTokenFieldDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GGProfileTokenFieldDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0828FF2D38404D40DC8AB9CC84C595D /* ResourceBundle-GGProfileTokenField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GGProfileTokenField-Info.plist"; sourceTree = "<group>"; };
+		C504E25978ED919F23F5553F1D3D8424 /* libPods-GGProfileTokenFieldDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GGProfileTokenFieldDemo.a"; path = "libPods-GGProfileTokenFieldDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2693AD508896CB57AE8577649F5CFF0 /* Pods-GGProfileTokenFieldDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGProfileTokenFieldDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		DE1DE8313880F9E6A71DCAD12A13C0A0 /* GGProfileTokenField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GGProfileTokenField-dummy.m"; sourceTree = "<group>"; };
-		E79F21E510F63F26D6FA63B4C9BBFF6B /* GGProfileTokenField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GGProfileTokenField.xcconfig; sourceTree = "<group>"; };
-		EDEC1C5B9C9FFCEC95236E99EF31C586 /* GGProfileToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GGProfileToken.swift; path = GGProfileTokenField/Classes/GGProfileToken.swift; sourceTree = "<group>"; };
-		FCF2258BFD4D39EE971C475F3D581515 /* GGProfileTokenField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = GGProfileTokenField.modulemap; path = ../../Headers/Public/GGProfileTokenField/GGProfileTokenField.modulemap; sourceTree = "<group>"; };
+		E4B33E1D744EAA87C2F7E4142C44F7A4 /* GGProfileToken.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = GGProfileToken.xib; sourceTree = "<group>"; };
+		E784E9B4C4D79A4B5E130E73F3A7D8DF /* GGProfileTokenTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GGProfileTokenTextField.swift; path = GGProfileTokenField/Classes/GGProfileTokenTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,20 +91,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03596AF131EB62C96368C11AEFA3DDEA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FCF2258BFD4D39EE971C475F3D581515 /* GGProfileTokenField.modulemap */,
-				E79F21E510F63F26D6FA63B4C9BBFF6B /* GGProfileTokenField.xcconfig */,
-				DE1DE8313880F9E6A71DCAD12A13C0A0 /* GGProfileTokenField-dummy.m */,
-				175BBF75FC0C9C34E6519B7D7E7E3903 /* GGProfileTokenField-prefix.pch */,
-				73DE0DEAD58B8DA6EAC0A2529754A910 /* GGProfileTokenField-umbrella.h */,
-				229F48C79B8CA4CBCA4B05DAF0DCD2C1 /* ResourceBundle-GGProfileTokenField-Info.plist */,
-			);
-			name = "Support Files";
-			path = "GGProfileTokenFieldDemo/Pods/Target Support Files/GGProfileTokenField";
-			sourceTree = "<group>";
-		};
 		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,19 +98,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		23758D43E48A6695BF56CE06639C4884 /* GGProfileTokenField */ = {
+		12AC6226012A8B84DD67646E1CE46318 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EDEC1C5B9C9FFCEC95236E99EF31C586 /* GGProfileToken.swift */,
-				25D635D231564559C3AB2B684042E5BD /* GGProfileTokenField.swift */,
-				4F676F510F6B763518E4183D39F84086 /* GGProfileTokenFieldDelegate.swift */,
-				04F2AE083B10DA6655C58BF15F104F3B /* GGProfileTokenTextField.swift */,
-				8CB34B99488C647979A3F4EC1E7B36FA /* Pod */,
-				6364F78623955D71C872FF065B2362FA /* Resources */,
-				03596AF131EB62C96368C11AEFA3DDEA /* Support Files */,
+				E4B33E1D744EAA87C2F7E4142C44F7A4 /* GGProfileToken.xib */,
 			);
-			name = GGProfileTokenField;
-			path = ../..;
+			name = Classes;
+			path = GGProfileTokenField/Classes;
+			sourceTree = "<group>";
+		};
+		286D1B6CE37939F56C74BFA572C2246C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				086A1AE9427492C4CBB6105D344EAC5F /* GGProfileTokenField.modulemap */,
+				4332985BB9C671F2DA2475529CB27943 /* GGProfileTokenField.xcconfig */,
+				8A535891C590AE05F554C108B9D63B37 /* GGProfileTokenField-dummy.m */,
+				10B2A5BF96FBB4BBA8C78A7DEF7C613C /* GGProfileTokenField-prefix.pch */,
+				3C3381BDB758BD0A314C84F80FEC0AEB /* GGProfileTokenField-umbrella.h */,
+				C0828FF2D38404D40DC8AB9CC84C595D /* ResourceBundle-GGProfileTokenField-Info.plist */,
+			);
+			name = "Support Files";
+			path = "GGProfileTokenFieldDemo/Pods/Target Support Files/GGProfileTokenField";
 			sourceTree = "<group>";
 		};
 		507A2173B3B16587D3E42ACC29AAD642 /* Targets Support Files */ = {
@@ -133,12 +129,28 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6364F78623955D71C872FF065B2362FA /* Resources */ = {
+		55FC2F71D8C98B1BC69695002892B10C /* GGProfileTokenField */ = {
 			isa = PBXGroup;
 			children = (
-				5A50171DA53C3A7964A38A70EE421076 /* GGProfileToken.xib */,
+				A6B48A08FA5093B13C5F2BD6AA7E6281 /* GGProfileToken.swift */,
+				57495B58D035C6AC1B546E284DBFEF62 /* GGProfileTokenField.swift */,
+				7F2D733F22528E525C893401ACCFF7B3 /* GGProfileTokenFieldDelegate.swift */,
+				E784E9B4C4D79A4B5E130E73F3A7D8DF /* GGProfileTokenTextField.swift */,
+				BC01890BD2F5336530E51EFC35BF3A09 /* Pod */,
+				917A2A1F3EEF0FFC36C184305BCDA60E /* Resources */,
+				286D1B6CE37939F56C74BFA572C2246C /* Support Files */,
 			);
-			name = Resources;
+			name = GGProfileTokenField;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6575C8DACF9B8ED1AE6AD2C76F3884F3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				104E3A466CD836C40834713D85508E11 /* GGProfileTokenField.xcassets */,
+			);
+			name = Assets;
+			path = GGProfileTokenField/Assets;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -155,16 +167,25 @@
 		82158419B0BC3CC969DCCD22B097DD0B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				23758D43E48A6695BF56CE06639C4884 /* GGProfileTokenField */,
+				55FC2F71D8C98B1BC69695002892B10C /* GGProfileTokenField */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		8CB34B99488C647979A3F4EC1E7B36FA /* Pod */ = {
+		917A2A1F3EEF0FFC36C184305BCDA60E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				233C5990A5BFD2E0662C08FBD3A5DCE0 /* GGProfileTokenField.podspec */,
-				1288A36B651C8CC8CB5799080205D299 /* README.md */,
+				6575C8DACF9B8ED1AE6AD2C76F3884F3 /* Assets */,
+				12AC6226012A8B84DD67646E1CE46318 /* Classes */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC01890BD2F5336530E51EFC35BF3A09 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				09B60AC4896B25B6B0BADA69990FFAA0 /* GGProfileTokenField.podspec */,
+				7918AD7AF08C184FB25C17FA014055EA /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -224,7 +245,7 @@
 			buildPhases = (
 				CD0F8CDCD6505D76288524250BB57C06 /* Sources */,
 				6224E57B9B810119644B0A6E6D2FA699 /* Frameworks */,
-				836E60C63D76A7EDFAB79B586226D4EE /* Resources */,
+				952CBAE1599FA3762F2BE8E50E5382A1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -301,11 +322,12 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		836E60C63D76A7EDFAB79B586226D4EE /* Resources */ = {
+		952CBAE1599FA3762F2BE8E50E5382A1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				592EA65F20D2E11B005E6909 /* GGProfileToken.xib in Resources */,
+				94F61FDAFD27D2D274566F16129B9156 /* GGProfileToken.xib in Resources */,
+				B51B1592BEB0C472A5CE77D95B0B4E85 /* GGProfileTokenField.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +353,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/GGProfileTokenField/GGProfileTokenField.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/GGProfileTokenField/GGProfileTokenField-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -347,11 +370,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2F47182827F1CD0D028B087E0D9A6A /* GGProfileToken.swift in Sources */,
 				BA428D9DA61477A78DF70A659BB11646 /* GGProfileTokenField-dummy.m in Sources */,
+				05CD22CAE48477E874C2EE66FA406756 /* GGProfileTokenField.swift in Sources */,
 				4C155B53B663C316D0C66C501DB0A0E9 /* GGProfileTokenFieldDelegate.swift in Sources */,
 				BA0D503A815DCC71C6BD37DFD6B9D750 /* GGProfileTokenTextField.swift in Sources */,
-				592EA65920D2DE8D005E6909 /* GGProfileTokenField.swift in Sources */,
-				592EA65E20D2E110005E6909 /* GGProfileToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +551,7 @@
 		};
 		A5FC244F19B8C3C2CB9686B0F93FFB08 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E79F21E510F63F26D6FA63B4C9BBFF6B /* GGProfileTokenField.xcconfig */;
+			baseConfigurationReference = 4332985BB9C671F2DA2475529CB27943 /* GGProfileTokenField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -579,7 +602,7 @@
 		};
 		CE3B6B770C8CE4F840A92F354A6F04B9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E79F21E510F63F26D6FA63B4C9BBFF6B /* GGProfileTokenField.xcconfig */;
+			baseConfigurationReference = 4332985BB9C671F2DA2475529CB27943 /* GGProfileTokenField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GGProfileTokenField";
@@ -595,7 +618,7 @@
 		};
 		E76B98999921ECBCF4FDEB5B9C65C603 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E79F21E510F63F26D6FA63B4C9BBFF6B /* GGProfileTokenField.xcconfig */;
+			baseConfigurationReference = 4332985BB9C671F2DA2475529CB27943 /* GGProfileTokenField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GGProfileTokenField";
@@ -611,7 +634,7 @@
 		};
 		FCDE6D1954F1D51D00F3943CD5FA755B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E79F21E510F63F26D6FA63B4C9BBFF6B /* GGProfileTokenField.xcconfig */;
+			baseConfigurationReference = 4332985BB9C671F2DA2475529CB27943 /* GGProfileTokenField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

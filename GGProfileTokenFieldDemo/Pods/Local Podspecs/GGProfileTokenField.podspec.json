@@ -15,9 +15,12 @@
     "ios": "8.0"
   },
   "source_files": "GGProfileTokenField/Classes/**/*.Swift",
-  "resource_bundles": {
-    "GGProfileTokenField": [
-      "GGProfileTokenField/Classes/**/*.xib"
-    ]
+  "ios": {
+    "resource_bundles": {
+      "GGProfileTokenField": [
+        "GGProfileTokenField/Assets/**/*.xcassets",
+        "GGProfileTokenField/Classes/**/*.xib"
+      ]
+    }
   }
 }

@@ -29,6 +29,13 @@ public class GGProfileToken: UIView {
         self.layer.cornerRadius = 15
         self.profileImageView.layer.cornerRadius = self.profileImageView.frame.width / 2
         self.profileImageView.clipsToBounds = true
+        
+        let podBundle = Bundle(for: GGProfileToken.self)
+        if let url = podBundle.url(forResource:"GGProfileTokenField", withExtension: "bundle"){
+            let ggProfileTokenBundle = Bundle(url: url)
+            let retrievedImage = UIImage(named: "close", in: ggProfileTokenBundle, compatibleWith: nil)
+            self.removeButton.setImage(retrievedImage, for: UIControlState.normal)
+        }
     }
     
     func setProfileImage(withURL imageURL : URL, placeHolderImage: UIImage?)  {

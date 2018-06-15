@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GGProfileTokenField: 05866c420645254f3e08c54fb477b0cc29550bb6
+  GGProfileTokenField: 6b3332cc8f8eaa576eadfa8c73feb79c40127f1f
 
 PODFILE CHECKSUM: bb5d983687868f4dcedb1df4372088e90a6d0cf0
 

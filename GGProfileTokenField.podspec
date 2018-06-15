@@ -31,10 +31,10 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'GGProfileTokenField/Classes/**/*.Swift'
   
-  s.resource_bundles = {
-      'GGProfileTokenField' => ['GGProfileTokenField/Classes/**/*.xib']
-  }     
-
+  s.ios.resource_bundle = {
+      'GGProfileTokenField' => ['GGProfileTokenField/Assets/**/*.xcassets','GGProfileTokenField/Classes/**/*.xib']
+  }
+    
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

@@ -88,8 +88,7 @@ public extension GGProfileTokenField {
     
     
     func removeToken(_ token : GGProfileToken) {
-        guard let index = tokens.index(of: token) else { return }
-            
+        guard let index = tokens.index(of: token) else { return }            
         tokens.remove(at: index)
         token.removeFromSuperview()
         self.setNeedsLayout()
