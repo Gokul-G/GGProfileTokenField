@@ -21,6 +21,7 @@ public class GGProfileTokenField : UIView {
     public var padding : CGFloat = 5
     public var isProfileImageHidden : Bool = false
     public var isRemoveHidden : Bool = false
+    private var textField = GGProfileTokenTextField()
    
     public var isScrollEnabled : Bool = true {
         didSet {
@@ -52,7 +53,11 @@ public class GGProfileTokenField : UIView {
         scrollView.frame = self.bounds
         scrollView.isScrollEnabled = true
         scrollView.autoresizingMask = [.flexibleWidth , .flexibleHeight]
-        self.addSubview(scrollView)        
+        scrollView.addSubview(textField)
+        textField.addTarget(self, action: #selector(textFieldChanged(_:)), for: UIControlEvents.editingChanged)
+        textField.delegate = self
+        textField.backgroundColor = UIColor.gray
+        self.addSubview(scrollView)
     }
 }
 
@@ -147,6 +152,7 @@ extension GGProfileTokenField  {
         self.contentRect = .zero
         let contentWidth = self.bounds.width
         
+        //Token Frame Calculations
         for token in tokens {
             let tokenWidth = calculateWidth(forToken:token)
             if(xPosition > contentWidth - tokenWidth) {
@@ -158,6 +164,13 @@ extension GGProfileTokenField  {
             contentRect = contentRect.union(token.frame)
             xPosition += tokenWidth + 10
         }
+        
+        //TextField Frame Calcumations
+        textField.frame.origin.x = 0
+        textField.frame.origin.y = yPosition + lineSpacing
+        textField.frame.size.width = self.frame.width
+        textField.frame.size.height = tokenHeight
+        contentRect = contentRect.union(textField.frame)
         
         self.scrollView.contentSize = contentRect.size
         delegate?.contentHeightOfProfileTokenField(height: contentRect.height)
@@ -183,6 +196,28 @@ extension GGProfileTokenField  {
         tokenWidth += padding //right
         
         return tokenWidth
+    }
+}
+
+extension GGProfileTokenField : UITextFieldDelegate {
+    
+    @objc public func textFieldChanged(_ sender :Any) {
+        let textField = sender as! UITextField
+        addToken(forText: textField.text!)
+        textField.text = ""
+    }
+    
+    public func textFieldDidEndEditing(_ textField: UITextField) {
+        addToken(forText: textField.text!)
+        textField.text = ""
+    }
+    
+    public func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField.text?.last == "," {
+            textField.resignFirstResponder()
+            return true
+        }
+        return false
     }
     
 }
