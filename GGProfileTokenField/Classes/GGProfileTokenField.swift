@@ -151,24 +151,34 @@ extension GGProfileTokenField  {
         var xPosition : CGFloat = 0, yPosition : CGFloat = 0
         self.contentRect = .zero
         let contentWidth = self.bounds.width
+        var lastTokenFrame = CGRect.zero
         
         //Token Frame Calculations
         for token in tokens {
             let tokenWidth = calculateWidth(forToken:token)
             if(xPosition > contentWidth - tokenWidth) {
-                yPosition += tokenHeight + lineSpacing
                 xPosition = 0
+                yPosition += tokenHeight + lineSpacing
             }
             
             token.frame = CGRect.init(x: xPosition, y: yPosition, width: tokenWidth, height: tokenHeight)
             contentRect = contentRect.union(token.frame)
-            xPosition += tokenWidth + 10
+            lastTokenFrame = token.frame
+            xPosition += tokenWidth + itemSpacing
         }
         
         //TextField Frame Calcumations
-        textField.frame.origin.x = 0
-        textField.frame.origin.y = yPosition + lineSpacing
-        textField.frame.size.width = self.frame.width
+        textField.sizeToFit()
+        if lastTokenFrame.origin.x + textField.frame.width > contentWidth {
+            textField.frame.origin.x = 0
+            textField.frame.origin.y = lastTokenFrame.origin.y + tokenHeight + lineSpacing
+        }else {
+            textField.frame.origin.x = lastTokenFrame.origin.x + lastTokenFrame.width + itemSpacing
+            textField.frame.origin.y = lastTokenFrame.origin.y
+        }
+        
+        
+        textField.frame.size.width = contentWidth - textField.frame.origin.x
         textField.frame.size.height = tokenHeight
         contentRect = contentRect.union(textField.frame)
         
@@ -203,21 +213,10 @@ extension GGProfileTokenField : UITextFieldDelegate {
     
     @objc public func textFieldChanged(_ sender :Any) {
         let textField = sender as! UITextField
-        addToken(forText: textField.text!)
-        textField.text = ""
-    }
-    
-    public func textFieldDidEndEditing(_ textField: UITextField) {
-        addToken(forText: textField.text!)
-        textField.text = ""
-    }
-    
-    public func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        if textField.text?.last == "," {
-            textField.resignFirstResponder()
-            return true
+        if let text = textField.text, text.last == " " {
+            addToken(forText: String(text.dropLast()))
+            textField.text = ""
         }
-        return false
+        layoutIfNeeded()
     }
-    
 }
